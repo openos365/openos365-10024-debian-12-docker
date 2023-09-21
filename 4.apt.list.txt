@@ -4806,10 +4806,10 @@ dotnet-apphost-pack-3.1/jammy 3.1.32-1 amd64
 dotnet-apphost-pack-6.0/jammy-updates,jammy-security,now 6.0.122-0ubuntu1~22.04.1 amd64 [installed,automatic]
 dotnet-apphost-pack-7.0/jammy-updates,jammy-security,now 7.0.111-0ubuntu1~22.04.1 amd64 [installed,automatic]
 dotnet-host-7.0/jammy-updates,jammy-security 7.0.111-0ubuntu1~22.04.1 amd64
-dotnet-host/jammy 7.0.11-1 amd64 [upgradable from: 7.0.10-1]
+dotnet-host/jammy,now 7.0.11-1 amd64 [installed,automatic]
 dotnet-hostfxr-3.1/jammy 3.1.32-1 amd64
 dotnet-hostfxr-6.0/jammy-updates,jammy-security,now 6.0.122-0ubuntu1~22.04.1 amd64 [installed,automatic]
-dotnet-hostfxr-7.0/jammy-updates,jammy-security 7.0.111-0ubuntu1~22.04.1 amd64 [upgradable from: 7.0.10-1]
+dotnet-hostfxr-7.0/jammy-updates,jammy-security 7.0.111-0ubuntu1~22.04.1 amd64 [upgradable from: 7.0.11-1]
 dotnet-runtime-3.1/jammy 3.1.32-1 amd64
 dotnet-runtime-6.0/jammy-updates,jammy-security,now 6.0.122-0ubuntu1~22.04.1 amd64 [installed,automatic]
 dotnet-runtime-7.0/jammy-updates,jammy-security,now 7.0.111-0ubuntu1~22.04.1 amd64 [installed,automatic]
@@ -12913,8 +12913,8 @@ google-android-platform-7-installer/jammy 7+r03+nmu5 all
 google-android-platform-8-installer/jammy 8+r03+nmu5 all
 google-android-platform-9-installer/jammy 9+r02+nmu5 all
 google-android-sdk-docs-installer/jammy 24+r3 all
-google-chrome-stable/now 116.0.5845.187-1 amd64 [installed,local]
-google-cloud-sdk/now 445.0.0-0 all [installed,local]
+google-chrome-stable/now 117.0.5938.88-1 amd64 [installed,local]
+google-cloud-sdk/now 446.0.1-0 all [installed,local]
 google-compute-engine-oslogin/jammy-updates 20220714.00-0ubuntu1~22.04.1 amd64
 google-compute-engine/jammy-updates 20230403.00-0ubuntu1~22.04.0 all
 google-guest-agent/jammy-updates 20230426.00-0ubuntu2~22.04.0 amd64
@@ -35487,8 +35487,8 @@ libppx-variants-conv-ocaml/jammy 0.14.2-1build1 amd64
 libppx-visitors-ocaml-dev/jammy 20210608-1build1 amd64
 libppx-visitors-ocaml-doc/jammy 20210608-1build1 all
 libppxlib-ocaml-dev/jammy 0.24.0-1build2 amd64
-libpq-dev/now 15.4-1.pgdg22.04+1 amd64 [installed,local]
-libpq5/now 15.4-1.pgdg22.04+1 amd64 [installed,local]
+libpq-dev/now 16.0-1.pgdg22.04+1 amd64 [installed,local]
+libpq5/now 16.0-1.pgdg22.04+1 amd64 [installed,local]
 libpqtypes-dev/jammy 1.5.1-7 amd64
 libpqtypes0/jammy 1.5.1-7 amd64
 libpqxx-6.4/jammy 6.4.5-2build1 amd64
@@ -52430,7 +52430,7 @@ micropolis/jammy 0.0.20071228-10 amd64
 micropython-doc/jammy 1.17+ds-1.1ubuntu2 all
 micropython/jammy 1.17+ds-1.1ubuntu2 amd64
 microsocks/jammy 1.0.1-2 amd64
-microsoft-edge-stable/now 116.0.1938.76-1 amd64 [installed,local]
+microsoft-edge-stable/now 117.0.2045.31-1 amd64 [installed,local]
 microsoft-identity-broker/jammy 1.6.1 amd64
 microsoft-identity-diagnostics/jammy 1.1.0 amd64
 midge/jammy 0.2.41-3 all
@@ -58372,9 +58372,9 @@ postgresql-14/now 14.9-1.pgdg22.04+1 amd64 [installed,local]
 postgresql-all/jammy 238 all
 postgresql-autodoc/jammy 1.41+20200921-1 all
 postgresql-client-14/now 14.9-1.pgdg22.04+1 amd64 [installed,local]
-postgresql-client-common/now 253.pgdg22.04+1 all [installed,local]
+postgresql-client-common/now 255.pgdg22.04+1 all [installed,local]
 postgresql-client/jammy 14+238 all
-postgresql-common/now 253.pgdg22.04+1 all [installed,local]
+postgresql-common/now 255.pgdg22.04+1 all [installed,local]
 postgresql-comparator/jammy 2.3.2-2 amd64
 postgresql-contrib/jammy 14+238 all
 postgresql-doc-14/jammy-updates,jammy-security 14.9-0ubuntu0.22.04.1 all
