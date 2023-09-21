@@ -62,7 +62,22 @@ if [ ! -z $${GITHUB_REPOSITORY} ];then
     cd $CMD_PATH
     apt list > 4.apt.list.txt
     apt list --installed > 5.apt.list.installed.txt
+   
+    # 8
+    rm -rf cd
+    cd $CMD_PATH
+    touch 8.workflows.to.run.repos.txt
+    dos2unix 8.workflows.to.run.repos.txt
+    while read repo
+    do
+        echo $repo | tr -d '\r'
+        export repo_name=$(echo $repo | tr -d '\r')
+        gh workflow run 1.ci.yml --repo $repo_name --ref $GITHUB_REF_NAME
+    done < 8.workflows.to.run.repos.txt
+
+    # 9
     p2 "CI-BOT:$(date +%Y.%m.%d-%H%M%S)-$GITHUB_REF_NAME-$GITHUB_RUN_NUMBER"
+    
 
 fi
 echo "============================================================================"
