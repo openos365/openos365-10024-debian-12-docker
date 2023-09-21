@@ -8,10 +8,10 @@ echo $PROJECT_NAME
 cd $CMD_PATH
 git status
 git add .
-export message=$1
-if [ -z $message ];then
-    export message="(just fix it)"
+export message="$1"
+if [ -z "$message" ];then
+    export message="[just fix it]"
 fi
-git commit -a -m "$1 (just fix it)"
+git commit -a -m "$message"
 git push origin HEAD
 

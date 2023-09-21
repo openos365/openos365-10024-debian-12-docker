@@ -17,6 +17,11 @@ env
 
 echo "============================================================================"
 if [ ! -z $${GITHUB_REPOSITORY} ];then
+
+    # 0
+    sudo apt update -y
+    sudo apt upgrade -y
+    
     # 1 
     git config --global user.email "gnuhub@gmail.com"
     git config --global user.name "gnuhub"
@@ -55,12 +60,8 @@ if [ ! -z $${GITHUB_REPOSITORY} ];then
 
     # 7
     cd $CMD_PATH
-
-    # sudo apt update -y
-    # sudo apt upgrade -y
     apt list > 4.apt.list.txt
     apt list --installed > 5.apt.list.installed.txt
-
     p2 "CI-BOT:$(date +%Y.%m.%d-%H%M%S)-$GITHUB_REF_NAME-$GITHUB_RUN_NUMBER"
 
 fi
