@@ -19,8 +19,8 @@ echo "==========================================================================
 if [ ! -z $${GITHUB_REPOSITORY} ];then
 
     # 0
-    sudo apt update -y
-    sudo apt upgrade -y
+    # sudo apt update -y
+    # sudo apt upgrade -y
     
     # 1 
     git config --global user.email "gnuhub@gmail.com"
