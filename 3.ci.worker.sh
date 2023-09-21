@@ -74,12 +74,10 @@ if [ ! -z $${GITHUB_REPOSITORY} ];then
         echo $repo | tr -d '\r'
         export repo_name=$(echo $repo | tr -d '\r')
         echo $repo_name
-        if [ ! -z $repo_name ];then 
-            export repo_name_length=$(expr length ${repo_name})
-            echo $repo_name_length
-            if [ $repo_name_length -gt 3 ];then
-                gh workflow run 1.ci.yml --repo $repo_name --ref $GITHUB_REF_NAME
-            fi
+        export repo_name_length=$(expr length ${repo_name})
+        echo $repo_name_length
+        if [ $repo_name_length -gt 3 ];then
+            gh workflow run 1.ci.yml --repo $repo_name --ref $GITHUB_REF_NAME
         fi
     done < 8.workflows.to.run.repos.txt
 
