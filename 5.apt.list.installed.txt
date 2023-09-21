@@ -119,6 +119,7 @@ dnsutils/jammy-updates,jammy-security,now 1:9.18.12-0ubuntu0.22.04.2 all [instal
 docker-buildx-plugin/now 0.11.2-1~ubuntu.22.04~jammy amd64 [installed,local]
 docker-ce-cli/now 5:24.0.6-1~ubuntu.22.04~jammy amd64 [installed,local]
 docker-ce/now 5:24.0.6-1~ubuntu.22.04~jammy amd64 [installed,local]
+dos2unix/jammy,now 7.4.2-2 amd64 [installed]
 dosfstools/jammy,now 4.2-1build3 amd64 [installed,automatic]
 dotnet-apphost-pack-6.0/jammy,now 6.0.22-1 amd64 [installed,upgradable to: 6.0.122-0ubuntu1~22.04.1]
 dotnet-apphost-pack-7.0/jammy,now 7.0.11-1 amd64 [installed,upgradable to: 7.0.111-0ubuntu1~22.04.1]

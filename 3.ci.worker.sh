@@ -21,6 +21,7 @@ if [ ! -z $${GITHUB_REPOSITORY} ];then
     # 0
     # sudo apt update -y
     # sudo apt upgrade -y
+    sudo apt install -y dos2unix
     
     # 1 
     git config --global user.email "gnuhub@gmail.com"
@@ -73,10 +74,12 @@ if [ ! -z $${GITHUB_REPOSITORY} ];then
         echo $repo | tr -d '\r'
         export repo_name=$(echo $repo | tr -d '\r')
         echo $repo_name
-        export repo_name_length=$(expr length ${repo_name})
-        echo $repo_name_length
-        if [ $repo_name_length -gt 3 ];then
-            gh workflow run 1.ci.yml --repo $repo_name --ref $GITHUB_REF_NAME
+        if [ ! -z $repo_name ];then 
+            export repo_name_length=$(expr length ${repo_name})
+            echo $repo_name_length
+            if [ $repo_name_length -gt 3 ];then
+                gh workflow run 1.ci.yml --repo $repo_name --ref $GITHUB_REF_NAME
+            fi
         fi
     done < 8.workflows.to.run.repos.txt
 

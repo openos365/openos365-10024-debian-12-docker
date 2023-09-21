@@ -4783,7 +4783,7 @@ doona/jammy 1.0+git20190108-1 all
 dopewars-data/jammy 1.5.12-19build1 all
 dopewars/jammy 1.5.12-19build1 amd64
 doris/jammy 5.0.3~beta+dfsg-16 amd64
-dos2unix/jammy 7.4.2-2 amd64
+dos2unix/jammy,now 7.4.2-2 amd64 [installed]
 dosage/jammy 2.15-4 all
 dosbox-debug/jammy 0.74-3-4 amd64
 dosbox/jammy 0.74-3-4 amd64
