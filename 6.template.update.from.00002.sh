@@ -25,6 +25,8 @@ cd openos365-00002-ci-github-actions-template
 if [ -z $1 ];then
     git pull origin main
 fi
+rm -rf 8.workflows.to.run.repos.txt
+touch 8.workflows.to.run.repos.txt
 
 rsync -avzP \
 --exclude=".git" \
