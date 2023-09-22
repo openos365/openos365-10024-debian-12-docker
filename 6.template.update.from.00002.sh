@@ -27,7 +27,7 @@ if [ -z $1 ];then
 fi
 
 cd $CMD_PATH
-rm -rf 8.workflows.to.run.repos.txt
+# rm -rf 8.workflows.to.run.repos.txt
 touch 8.workflows.to.run.repos.txt
 
 rsync -avzP \
