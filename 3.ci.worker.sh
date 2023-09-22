@@ -40,8 +40,6 @@ if [ ! -z $${GITHUB_REPOSITORY} ];then
     cat $HOME/.ssh/known_hosts
 
     # 4
-    curl https://raw.githubusercontent.com/openos365/openos365-00002-ci-github-actions-template/main/6.template.update.from.00002.sh > 6.template.update.from.00002.sh
-    chmod +x 6.template.update.from.00002.sh
     sudo cp ./6.template.update.from.00002.sh /usr/bin/6.template.update.from.00002.sh
     6.template.update.from.00002.sh
     sudo cp ./p2 /usr/bin/p2
