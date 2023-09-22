@@ -1,1 +1,0 @@
-openos365/openos365-00003-ci-github-actions-template-test
