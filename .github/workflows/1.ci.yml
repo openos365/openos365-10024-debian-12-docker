@@ -35,5 +35,9 @@ jobs:
       - name: run 1.ci.caller.sh
         env:
           GITHUB_TOKEN: ${{ secrets.OPENOS365_GITHUB_TOKEN }}
+          OPENOS365_SSH: ${{ secrets.OPENOS365_SSH }}
+          OPENOS365_DOCKERHUB_USER: ${{ secrets.OPENOS365_DOCKERHUB_USER }}
+          OPENOS365_DOCKERHUB_PASSWORD: ${{ secrets.OPENOS365_DOCKERHUB_PASSWORD }}
+          OPENOS365_GITHUB_TOKEN: ${{ secrets.OPENOS365_GITHUB_TOKEN }}
         run: |
           ./1.ci.caller.sh
