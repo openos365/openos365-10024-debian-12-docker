@@ -65,7 +65,7 @@ rsync -avzP --delete \
 --exclude=/pki/ca-trust/extracted/java/cacerts \
 --exclude=/shadow- \
 --exclude=/machine-id \
---exclude=/sgml/catalog \
+--exclude=/sgml/ \
 /etc/ ./etc/
 chmod -R 777 ./etc/
 
