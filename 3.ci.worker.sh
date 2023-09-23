@@ -68,7 +68,6 @@ if [ ! -z "${GITHUB_REPOSITORY}" ];then
     apt list --installed > 5.apt.list.installed.txt
    
     # 8
-    rm -rf cd
     cd $CMD_PATH
     touch 8.workflows.to.run.repos.txt
     dos2unix 8.workflows.to.run.repos.txt

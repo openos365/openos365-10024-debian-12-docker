@@ -5,6 +5,7 @@ export CMD_PATH=$(cd `dirname $0`; pwd)
 cd $CMD_PATH
 
 docker build . -f Dockerfile \
+--progress plain \
 -t ghcr.io/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:$GITHUB_RUN_NUMBER \
 -t ghcr.io/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:latest \
 -t ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:$GITHUB_RUN_NUMBER \
