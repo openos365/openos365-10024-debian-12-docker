@@ -17,7 +17,8 @@ env
 
 echo "============================================================================"
 # TODO HERE
-docker pull ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME-root:$GITHUB_RUN_NUMBER
-docker run -i -v $PWD:/code ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME-root:$GITHUB_RUN_NUMBER /code/2.run.in.docker.sh
+
+rsync -avzP ./template/ ./
+
 
 echo "============================================================================"

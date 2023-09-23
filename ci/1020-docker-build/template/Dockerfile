@@ -1,4 +1,4 @@
-FROM openeuler/openeuler:latest
+FROM openanolis/anolisos:7.9-x86_64
 
 # 1
 COPY files/ /tmp/files/
