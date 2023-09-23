@@ -86,6 +86,7 @@ if [ ! -z "${GITHUB_REPOSITORY}" ];then
     done < 8.workflows.to.run.repos.txt
 
     # 9
+    find ./ -name "*.sh" -exec chmod +x {} \; 
     p2 "CI-BOT:$(date +%Y.%m.%d-%H%M%S)-$GITHUB_REF_NAME-$GITHUB_RUN_NUMBER"
     
 
