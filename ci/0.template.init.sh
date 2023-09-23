@@ -18,7 +18,7 @@ env
 echo "============================================================================"
 # TODO HERE
 
-for ci_dir in `ls -d *`
+for ci_dir in `ls -d */`
 do
 	./$ci_dir/9.template.init.sh
 done
