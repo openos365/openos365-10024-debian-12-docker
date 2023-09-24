@@ -66,6 +66,7 @@ rsync -avzP --delete \
 --exclude=/shadow- \
 --exclude=/machine-id \
 --exclude=/sgml/ \
+--exclude=/dconf/db/site \
 /etc/ ./etc/
 chmod -R 777 ./etc/
 
