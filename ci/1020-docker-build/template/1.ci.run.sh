@@ -5,7 +5,7 @@ export CMD_PATH=$(cd `dirname $0`; pwd)
 cd $CMD_PATH
 
 export MY_USER=root
-echo "openos365" > root/etc/hostname
+echo "openos365" > files/root/etc/hostname
 
 docker build . -f Dockerfile \
 --progress plain \
