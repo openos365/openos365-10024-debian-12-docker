@@ -36,6 +36,14 @@ docker run -it --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro openos365/o
 podman pull docker.io/openos365/openos365-10024-debian-12-docker-main-root:latest
 podman run -it docker.io/openos365/openos365-10024-debian-12-docker-main-root:latest
 podman run -it docker.io/openos365/openos365-10024-debian-12-docker-main-root:latest /sbin/init
+
+podman run -it \
+--cap-add NET_RAW \
+-v /etc/resolv.conf:/etc/resolv.conf \
+--net=host docker.io/openos365/openos365-10024-debian-12-docker-main-root:latest \
+/sbin/init \
+--log-level=debug
+
 ```
 #### www
 
