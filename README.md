@@ -49,6 +49,13 @@ docker.io/openos365/openos365-10024-debian-12-docker-main-root:latest \
 /sbin/init \
 --log-level=debug
 
+
+
+docker pull dockerhub.qingcloud.com/openos365/openos365-10024-debian-12-docker-main-root:latest
+docker run -it --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro dockerhub.qingcloud.com/openos365/openos365-10024-debian-12-docker-main-root:latest bash
+
+
+
 ```
 #### www
 
@@ -61,9 +68,6 @@ podman run -it docker.io/openos365/openos365-10024-debian-12-docker-main-www:lat
 podman run -it docker.io/openos365/openos365-10024-debian-12-docker-main-www:latest:latest sudo /sbin/init
 
 
-
-docker pull dockerhub.qingcloud.com/openos365/openos365-10024-debian-12-docker-main-root:latest
-docker run -it --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro dockerhub.qingcloud.com/openos365/openos365-10024-debian-12-docker-main-root:latest bash
 
 
 ```
