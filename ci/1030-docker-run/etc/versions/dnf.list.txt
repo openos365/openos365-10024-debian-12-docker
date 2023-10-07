@@ -2777,7 +2777,7 @@ distribution-gpg-keys-copr.noarch                                   1.97-1.el7  
 djvulibre.x86_64                                                    3.5.25.3-24.el7                                               epel    
 djvulibre-devel.x86_64                                              3.5.25.3-24.el7                                               epel    
 djvulibre-libs.x86_64                                               3.5.25.3-24.el7                                               epel    
-dkms.noarch                                                         3.0.11-1.el7                                                  epel    
+dkms.noarch                                                         3.0.12-1.el7                                                  epel    
 dl.noarch                                                           0.17.1-1.el7                                                  epel    
 dl_poly.x86_64                                                      1.9.20140324-19.el7                                           epel    
 dl_poly-common.noarch                                               1.9.20140324-19.el7                                           epel    
@@ -21280,9 +21280,9 @@ xqilla-devel.x86_64                                                 2.2.4-7.el7 
 xqilla-doc.noarch                                                   2.2.4-7.el7                                                   epel    
 xrdcl-http.x86_64                                                   1:5.6.2-2.el7                                                 epel    
 xrdhttpvoms.x86_64                                                  0.2.5-2.el7                                                   epel    
-xrdp.x86_64                                                         1:0.9.23-1.el7                                                epel    
-xrdp-devel.x86_64                                                   1:0.9.23-1.el7                                                epel    
-xrdp-selinux.x86_64                                                 1:0.9.23-1.el7                                                epel    
+xrdp.x86_64                                                         1:0.9.23.1-1.el7                                              epel    
+xrdp-devel.x86_64                                                   1:0.9.23.1-1.el7                                              epel    
+xrdp-selinux.x86_64                                                 1:0.9.23.1-1.el7                                              epel    
 xreader.x86_64                                                      1.6.2-2.el7                                                   epel    
 xreader-devel.x86_64                                                1.6.2-2.el7                                                   epel    
 xreader-doc.noarch                                                  1.6.2-2.el7                                                   epel    
