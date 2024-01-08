@@ -12,7 +12,7 @@ echo "==========================================================================
 date
 sudo apt install debootstrap -y
 distro=bookworm
-mirror=https://mirrors.tuna.tsinghua.edu.cn/debian/
+mirror=http://mirrors.ustc.edu.cn/debian/
 
 rootfsDir=chroot
 debootstrap=debootstrap
