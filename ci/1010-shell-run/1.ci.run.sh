@@ -10,7 +10,7 @@ echo "==========================================================================
 # TODO HERE
 
 date
-
+sudo apt install debootstrap -y
 distro=bookworm
 mirror=https://mirrors.tuna.tsinghua.edu.cn/debian/
 
