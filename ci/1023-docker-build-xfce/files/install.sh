@@ -143,6 +143,35 @@ gickup --help
 
 go_install
 
+function nvm_install()
+{
+cd ~
+git clone https://github.com/nvm-sh/nvm.git .nvm
+cd .nvm
+git checkout v0.39.5
+
+cd ~
+. ~/.nvm/nvm.sh
+
+for node_version in "v14.21.3" "v16.20.2" "v18.18.0" "v20.8.0"
+do
+  nvm install $node_version
+  nvm use $node_version
+  npm install yarn -g
+  npm install pnpm -g
+  yarn global add prettier
+done
+
+nvm use v14.21.3
+npm install meteor -g --unsafe-perm
+
+export PATH=$HOME/.meteor:$PATH
+echo $PATH
+which node
+node --version
+}
+
+nvm_install
 
 
 
