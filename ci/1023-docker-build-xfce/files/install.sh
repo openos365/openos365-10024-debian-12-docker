@@ -77,6 +77,8 @@ apt install -y extlinux
 apt install -y kpartx
 apt install -y p7zip-full grub2-common mtools xorriso squashfs-tools-ng jq
 apt install -y cloud-utils
+apt install -y deepin-terminal
+apt install -y caddy
 systemctl enable docker
 
 apt-get install -y wget gpg
