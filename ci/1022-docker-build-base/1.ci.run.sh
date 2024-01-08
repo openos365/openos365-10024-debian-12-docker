@@ -4,7 +4,7 @@ set -x
 export CMD_PATH=$(cd `dirname $0`; pwd)
 cd $CMD_PATH
 
-export MY_USER=www
+export MY_USER=base
 
 docker build . -f Dockerfile \
 --progress plain \
