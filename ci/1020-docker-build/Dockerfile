@@ -5,9 +5,7 @@ ADD rootfs.tar /
 COPY files/ /tmp/files/
 
 # 2
-USER root
 WORKDIR /root
-ENV USER=root
 ENV HOME=/root
 RUN /tmp/files/install.sh
 
