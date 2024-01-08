@@ -14,17 +14,18 @@ docker build . -f Dockerfile \
 -t ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME-${MY_USER}:latest \
 -t hkccr.ccs.tencentyun.com/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME-${MY_USER}:$GITHUB_RUN_NUMBER \
 -t hkccr.ccs.tencentyun.com/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME-${MY_USER}:latest \
--t registry.cn-hangzhou.aliyuncs.com/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME-${MY_USER}:$GITHUB_RUN_NUMBER \
--t registry.cn-hangzhou.aliyuncs.com/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME-${MY_USER}:latest
+-t registry.cn-hangzhou.aliyuncs.com/patternos/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME-${MY_USER}:$GITHUB_RUN_NUMBER \
+-t registry.cn-hangzhou.aliyuncs.com/patternos/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME-${MY_USER}:latest
 
 
 # docker push ghcr.io/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME-${MY_USER}:$GITHUB_RUN_NUMBER
 # docker push ghcr.io/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME-${MY_USER}:latest
- docker push registry.cn-hangzhou.aliyuncs.com/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME-${MY_USER}:$GITHUB_RUN_NUMBER
- docker push registry.cn-hangzhou.aliyuncs.com/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME-${MY_USER}:latest
+docker push registry.cn-hangzhou.aliyuncs.com/patternos/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME-${MY_USER}:$GITHUB_RUN_NUMBER
+docker push registry.cn-hangzhou.aliyuncs.com/patternos/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME-${MY_USER}:latest
 # docker push hkccr.ccs.tencentyun.com/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME-${MY_USER}:$GITHUB_RUN_NUMBER 
 # docker push hkccr.ccs.tencentyun.com/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME-${MY_USER}:latest 
 # docker push ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME-${MY_USER}:$GITHUB_RUN_NUMBER
 # docker push ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME-${MY_USER}:latest
+
 
 echo "============================================================================"
