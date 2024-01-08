@@ -25,7 +25,7 @@
 #  memory with every getXXent() call.  Otherwise each getXXent() call
 #  might result into a network communication with the server to get
 #  the next entry.
-SETENT_BATCH_READ=TRUE
+#SETENT_BATCH_READ=TRUE
 #
 # ADJUNCT_AS_SHADOW
 #  If set to TRUE, the passwd routines in the NIS NSS module will not
@@ -34,4 +34,4 @@ SETENT_BATCH_READ=TRUE
 #  server cannot be trusted to send the passwd.adjuct table only to
 #  privileged clients.  Instead the passwd.adjunct.byname table is
 #  used to synthesize the shadow.byname table if it does not exist.
-#ADJUNCT_AS_SHADOW=TRUE
+ADJUNCT_AS_SHADOW=TRUE

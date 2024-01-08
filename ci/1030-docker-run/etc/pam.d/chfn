@@ -1,6 +1,16 @@
-#%PAM-1.0
-auth       sufficient   pam_rootok.so
-auth       include      system-auth
-account    include      system-auth
-password   include      system-auth
-session    include      system-auth
+#
+# The PAM configuration file for the Shadow `chfn' service
+#
+
+# This allows root to change user infomation without being
+# prompted for a password
+auth		sufficient	pam_rootok.so
+
+# The standard Unix authentication modules, used with
+# NIS (man nsswitch) as well as normal /etc/passwd and
+# /etc/shadow entries.
+@include common-auth
+@include common-account
+@include common-session
+
+
