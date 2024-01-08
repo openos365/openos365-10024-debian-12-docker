@@ -9,5 +9,6 @@ cd $CMD_PATH
 env
 whoami
 pwd
-
+apt update -y
+apt upgrade -y
 
