@@ -27,4 +27,8 @@ debootstrap \
 --include=zsh \
 $distro $rootfsDir $mirror
 
+sudo tar -C chroot -cf ./rootfs.tar .
+
+mv ./rootfs.tar ../1020-docker-build/
+
 echo "============================================================================"
