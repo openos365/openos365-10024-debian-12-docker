@@ -17,6 +17,8 @@ env
 
 echo "============================================================================"
 # TODO HERE
+cd $CMD_PATH
+rsync -avzP ./chroot/etc/ /etc/
 apt install -y task-xfce-desktop
 echo "debian-live" > /etc/hostname
 

@@ -23,7 +23,7 @@ fi
 
 sudo debootstrap \
 --arch=amd64 \
---include=zsh,locales,locales-all \
+--include=zsh,locales,locales-all,rsync \
 --components=main,contrib,non-free,non-free-firmware \
 --variant=minbase \
 $distro $rootfsDir $mirror
