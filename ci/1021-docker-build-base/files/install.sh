@@ -17,6 +17,13 @@ env
 
 echo "============================================================================"
 # TODO HERE
+apt -y install --no-install-recommends linux-image-amd64
+apt -y install --no-install-recommends systemd-sysv 
+apt -y install --no-install-recommends network-manager 
+apt -y install --no-install-recommends live-boot
+apt -y install --no-install-recommends calamares calamares-settings-debian
+apt -y install --no-install-recommends grub2
 
+echo "root:root" | chpasswd
 
 echo "============================================================================"
