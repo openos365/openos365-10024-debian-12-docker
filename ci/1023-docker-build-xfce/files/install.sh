@@ -102,5 +102,48 @@ function pkg_install_remove()
 pkg_install_remove
 
 
+function jabba_install()
+{
+  export HOME=/root
+  export USER=root
+  export JABBA_VERSION=0.11.2
+  export JABBA_INDEX=https://github.com/typelevel/jdk-index/raw/main/index.json
+  curl -sL https://github.com/shyiko/jabba/raw/master/install.sh | bash 
+  . /root/.jabba/jabba.sh
+  for p_name in `jabba ls-remote`
+  do
+  	echo $p_name
+       jabba install $p_name
+  done
+	rsync -avzP /root/.jabba/ /etc/skel/.jabba/
+}
+jabba_install
+
+function go_install()
+{
+apt install golang -y
+curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer | bash
+source /root/.gvm/scripts/gvm
+
+
+git clone https://github.com/cooperspencer/gickup.git
+#export go_version=$(cat gickup/.github/workflows/go.yml | yq -y .jobs.build.steps[1].with | cut -d ":" -f 2 | tr -d " ")
+export go_version=$(cat gickup/.github/workflows/go.yml | grep "go-version" | cut -d ":" -f 2 | tr -d " ")
+
+gvm install go$go_version
+gvm use go$go_version
+
+cd gickup
+go build .
+cp -fv ./gickup /usr/bin/gickup
+which gickup
+gickup --help
+
+}
+
+go_install
+
+
+
 
 echo "============================================================================"
