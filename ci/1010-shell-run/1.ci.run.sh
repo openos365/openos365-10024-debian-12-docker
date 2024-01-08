@@ -23,8 +23,9 @@ fi
 
 sudo debootstrap \
 --arch=amd64 \
+--include=zsh,locales,locales-all \
+--components=main,contrib,non-free,non-free-firmware \
 --variant=minbase \
---include=zsh \
 $distro $rootfsDir $mirror
 
 sudo tar -C chroot -cf ./rootfs.tar .
