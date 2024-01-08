@@ -21,7 +21,7 @@ if [  -d $rootfsDir ];then
     rm -rf $rootfsDir
 fi
 
-debootstrap \
+sudo debootstrap \
 --arch=amd64 \
 --variant=minbase \
 --include=zsh \
