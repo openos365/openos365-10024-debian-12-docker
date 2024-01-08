@@ -19,10 +19,13 @@ echo "==========================================================================
 # TODO HERE
 cd $CMD_PATH
 rsync -avzP ./chroot/etc/ /etc/
+apt update -y
+apt upgrade -y
+
 apt install -y task-xfce-desktop
 echo "debian-live" > /etc/hostname
 
-apt-get update -y
+
 apt autoremove -y
 apt install locales -y 
 apt install locales-all -y 
