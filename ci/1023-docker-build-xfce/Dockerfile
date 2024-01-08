@@ -1,4 +1,4 @@
-FROM openos365/openos365-10001-anolisos-7-docker-main-root:latest
+FROM openos365/openos365-10024-debian-12-docker-main-base:latest
 
 # 1
 COPY files/ /tmp/files/
