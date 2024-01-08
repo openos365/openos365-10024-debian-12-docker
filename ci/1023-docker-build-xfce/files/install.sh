@@ -139,6 +139,7 @@ cp -fv ./gickup /usr/bin/gickup
 which gickup
 gickup --help
 
+rsync -avzP /root/.gvm/ /etc/skel/.gvm/
 }
 
 go_install
@@ -169,6 +170,8 @@ export PATH=$HOME/.meteor:$PATH
 echo $PATH
 which node
 node --version
+
+rsync -avzP /root/.nvm/ /etc/skel/.nvm/
 }
 
 nvm_install
