@@ -56,5 +56,7 @@ jobs:
           OPENOS365_GITHUB_TOKEN: ${{ secrets.OPENOS365_GITHUB_TOKEN }}
         run: |
           ./1.ci.caller.sh
-      - uses: satackey/action-docker-layer-caching@v0.0.11
-        continue-on-error: true
+      - name: Cache Docker images.
+        uses: ScribeMD/docker-cache@0.3.7
+        with:
+          key: docker-${{ runner.os }}
