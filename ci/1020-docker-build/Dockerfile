@@ -2,12 +2,12 @@ FROM scratch
 
 ADD rootfs.tar /
 # 1
-COPY files/ /tmp/files/
+ADD files/ /
 
 # 2
 WORKDIR /root
 ENV HOME=/root
-RUN /tmp/files/install.sh
+RUN /ci/install.sh
 
 # 3
-RUN rm -rf /tmp/files/
+RUN rm -rf /ci/
