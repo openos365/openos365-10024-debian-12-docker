@@ -23,7 +23,7 @@ sudo df -h
 sudo rm -rf /usr/local/lib/android # will release about 10 GB if you don't need Android
 sudo rm -rf /usr/share/dotnet # will release about 20GB if you don't need .NET
 
-sudo docker image prune --all --force
+# sudo docker image prune --all --force
 
 # https://github.com/jlumbroso/free-disk-space/blob/main/action.yml
 sudo rm -rf /opt/ghc
