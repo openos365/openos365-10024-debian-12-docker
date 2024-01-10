@@ -45,10 +45,10 @@ jobs:
           registry: registry.cn-hangzhou.aliyuncs.com
           username: ${{ secrets.OPENOS365_ALI_USER }}
           password: ${{ secrets.OPENOS365_ALI_PASSWORD }}
-      - name: Cache Docker images.
-        uses: ScribeMD/docker-cache@0.3.7
-        with:
-          key: docker-${{ runner.os }}
+      # - name: Cache Docker images.
+      #   uses: ScribeMD/docker-cache@0.3.7
+      #   with:
+      #     key: docker-${{ runner.os }}
       - name: run 1.ci.caller.sh
         env:
           GITHUB_TOKEN: ${{ secrets.OPENOS365_GITHUB_TOKEN }}
