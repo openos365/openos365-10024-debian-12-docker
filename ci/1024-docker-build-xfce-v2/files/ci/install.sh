@@ -57,5 +57,10 @@ rsync -avzP /root/.nvm/ /etc/skel/.nvm/
 nvm_install
 
 
+apt update -y
+apt upgrade -y
+apt autoremove -y
+apt clean
+df -h
 
 echo "============================================================================"

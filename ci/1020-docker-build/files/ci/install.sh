@@ -11,4 +11,8 @@ whoami
 pwd
 apt update -y
 apt upgrade -y
+apt autoremove -y
+apt clean
+df -h
+
 
