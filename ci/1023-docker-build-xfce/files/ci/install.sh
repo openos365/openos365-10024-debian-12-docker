@@ -67,10 +67,10 @@ apt install -y dosfstools
 apt install -y rsync 
 apt install -y qemu-system-x86
 apt install -y docker.io 
-apt install -y  docker-compose 
-apt install -y  golang
-apt install -y  maven
-apt install -y  tree
+apt install -y docker-compose 
+apt install -y golang
+apt install -y maven
+apt install -y tree
 apt install -y extlinux
 apt install -y kpartx
 apt install -y p7zip-full grub2-common mtools xorriso squashfs-tools-ng jq
@@ -79,9 +79,21 @@ apt install -y deepin-terminal
 apt install -y caddy
 apt install -y repo
 apt install -y ostree
+apt install -y wget 
+apt install -y gpg
 systemctl enable docker
 
-apt-get install -y wget gpg
+
+
+
+
+wget https://mirrors.ustc.edu.cn/proxmox/debian/proxmox-release-bookworm.gpg -O /etc/apt/trusted.gpg.d/proxmox-release-bookworm.gpg
+echo "deb [arch=amd64] https://mirrors.ustc.edu.cn/proxmox/debian/pve/ bookworm pve-no-subscription" > /etc/apt/sources.list.d/pve-install-repo.list
+apt update -y
+apt upgrade -y
+
+
+
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
 echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list
