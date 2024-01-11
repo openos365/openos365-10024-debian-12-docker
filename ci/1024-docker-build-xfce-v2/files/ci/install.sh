@@ -60,7 +60,6 @@ nvm_install
 apt update -y
 apt upgrade -y
 apt autoremove -y
-apt clean
-df -h
+apt clean -y
 
 echo "============================================================================"
