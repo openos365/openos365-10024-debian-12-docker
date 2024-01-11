@@ -8,8 +8,10 @@ cd $CMD_PATH
 
 echo "============================================================================"
 # TODO HERE
+cd ~
 wget https://mirrors.ustc.edu.cn/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2023.4_all.deb
 sudo dpkg -i debian-archive-keyring_2023.4_all.deb
+cd $CMD_PATH
 
 date
 sudo apt install debootstrap -y
