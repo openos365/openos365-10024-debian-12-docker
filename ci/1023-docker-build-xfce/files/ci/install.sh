@@ -78,6 +78,7 @@ apt install -y cloud-utils
 apt install -y deepin-terminal
 apt install -y caddy
 apt install -y repo
+apt install -y ostree
 systemctl enable docker
 
 apt-get install -y wget gpg
