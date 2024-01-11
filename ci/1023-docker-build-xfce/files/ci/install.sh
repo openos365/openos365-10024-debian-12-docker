@@ -80,6 +80,7 @@ apt install -y p7zip-full grub2-common mtools xorriso squashfs-tools-ng jq
 apt install -y cloud-utils
 apt install -y deepin-terminal
 apt install -y caddy
+apt install -y repo
 systemctl enable docker
 
 apt-get install -y wget gpg
