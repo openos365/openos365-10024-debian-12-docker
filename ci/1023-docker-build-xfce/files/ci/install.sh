@@ -24,10 +24,6 @@ apt update -y
 apt upgrade -y
 
 apt install -y task-xfce-desktop
-echo "debian-live" > /etc/hostname
-
-
-apt autoremove -y
 apt install locales -y 
 apt install locales-all -y 
 apt install -y fonts-wqy-microhei

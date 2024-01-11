@@ -18,8 +18,7 @@ env
 echo "============================================================================"
 # TODO HERE
 cd $CMD_PATH
-ls -al 
-rsync -avzP ./mychroot/etc/ /etc/
+ls -al
 apt update -y
 apt upgrade -y
 
