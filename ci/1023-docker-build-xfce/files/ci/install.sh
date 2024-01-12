@@ -35,7 +35,16 @@ debconf-set-selections <<< "firmware-ipw2x00 firmware-ipw2x00/license/accepted	b
 debconf-set-selections <<< "firmware-ivtv firmware-ivtv/license/accepted	boolean	true"
 debconf-set-selections <<< "keyboard-configuration keyboard-configuration/layoutcode	string	us"
 debconf-set-selections <<< "keyboard-configuration keyboard-configuration/variant	select	English (US)"
+
 debconf-set-selections <<< "console-setup	console-setup/charmap47	select	UTF-8"
+debconf-set-selections <<< "console-setup	console-setup/codeset47	select	Guess optimal character set"
+debconf-set-selections <<< "console-setup	console-setup/codesetcode	string	guess"
+debconf-set-selections <<< "console-setup	console-setup/fontface47	select	Fixed"
+debconf-set-selections <<< "console-setup	console-setup/fontsize	string	8x16"
+debconf-set-selections <<< "console-setup	console-setup/fontsize-fb47	select	8x16"
+debconf-set-selections <<< "console-setup	console-setup/fontsize-text47	select	8x16"
+debconf-set-selections <<< "console-setup	console-setup/store_defaults_in_debconf_db	boolean	true"
+
 
 
 apt-get install -y --no-install-recommends linux-image-amd64 live-boot systemd-sysv
