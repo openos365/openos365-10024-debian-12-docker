@@ -90,6 +90,9 @@ apt install -y repo
 apt install -y ostree
 apt install -y wget 
 apt install -y gpg
+apt install -y adb
+apt install -y fastboot
+apt install -y ruby
 systemctl enable docker
 
 
