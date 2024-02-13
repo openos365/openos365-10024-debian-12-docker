@@ -98,7 +98,7 @@ apt install -y ssh
 systemctl enable docker
 systemctl enable ssh
 
-
+export OSH="/etc/skel/.oh-my-bash"; bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" --unattended
 
 # https://pve.proxmox.com/wiki/Install_Proxmox_VE_on_Debian_12_Bookworm
 wget https://mirrors.ustc.edu.cn/proxmox/debian/proxmox-release-bookworm.gpg -O /etc/apt/trusted.gpg.d/proxmox-release-bookworm.gpg
