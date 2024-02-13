@@ -93,8 +93,10 @@ apt install -y gpg
 apt install -y adb
 apt install -y fastboot
 apt install -y ruby
+apt install -y net-tools
+apt install -y ssh
 systemctl enable docker
-
+systemctl enable ssh
 
 
 
