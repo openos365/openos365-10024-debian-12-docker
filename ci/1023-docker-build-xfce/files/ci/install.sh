@@ -243,6 +243,8 @@ md_server_install()
 	        /root/.cache
 }
 
+md_server_install
+
 apt update -y
 apt upgrade -y
 apt autoremove -y
