@@ -245,6 +245,43 @@ md_server_install()
 
 md_server_install
 
+curl -LO https://storage.googleapis.com/container-diff/latest/container-diff-linux-amd64
+install container-diff-linux-amd64 /usr/bin/container-diff
+rm -rf container-diff-linux-amd64
+
+export DIVE_VERSION=$(curl -sL "https://api.github.com/repos/wagoodman/dive/releases/latest" | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/')
+curl -OL https://github.com/wagoodman/dive/releases/download/v${DIVE_VERSION}/dive_${DIVE_VERSION}_linux_amd64.deb
+apt install ./dive_${DIVE_VERSION}_linux_amd64.deb
+  
+function code_server_install()
+{
+
+  
+  curl -fsSL https://code-server.dev/install.sh | sh
+  
+  systemctl enable code-server@root
+
+}
+code_server_install
+
+# https://github.com/cli/cli/blob/trunk/docs/install_linux.md
+type -p curl >/dev/null || (sudo apt update && sudo apt install curl -y)
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
+&& sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg \
+&& echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
+&& sudo apt update \
+&& sudo apt install gh -y
+
+cd ~/
+git clone https://github.com/gnuhub/connect-proxy.git
+cd connect-proxy
+gcc connect.c -o connect -lssl -lcrypto
+
+rsync -avP ./connect /usr/bin/connect
+chmod +x /usr/bin/connect
+cd ~/
+rm -rf connect-proxy
+
 apt update -y
 apt upgrade -y
 apt autoremove -y
