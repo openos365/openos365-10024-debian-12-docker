@@ -5,6 +5,7 @@ export CMD_PATH=$(cd `dirname $0`; pwd)
 export PROJECT_NAME="${CMD_PATH##*/}"
 echo $PROJECT_NAME
 cd $CMD_PATH
+export DEBIAN_FRONTEND="noninteractive"
 
 echo "============================================================================"
 pwd
@@ -209,6 +210,38 @@ rsync -avzP /root/.nvm/ /etc/skel/.nvm/
 
 nvm_install
 
+md_server_install()
+{
+	# https://github.com/DDS-Derek/mdserver-web-Docker/tree/master
+ 	# 1
+	curl --insecure -fsSL https://cdn.jsdelivr.net/gh/midoks/mdserver-web@latest/scripts/install.sh | bash
+ 
+	# 2
+	cd /www/server/mdserver-web/plugins/openresty
+	bash install.sh install 1.21.4.3
+ 
+ 	# 3
+	cd /www/server/mdserver-web/plugins/php
+	bash install.sh install 74
+ 
+	# 4
+	cd /www/server/mdserver-web/plugins/mysql
+	bash install.sh install 5.7
+ 
+	# 5
+	cd /www/server/mdserver-web/plugins/phpmyadmin 
+	bash install.sh install 5.2.0
+ 
+	# 6
+	apt-get autoremove -y 
+	apt-get clean 
+	rm -rf \
+	        /tmp/* \
+	        /var/lib/apt/lists/* \
+	        /var/tmp/* \
+	        /var/log/* \
+	        /root/.cache
+}
 
 apt update -y
 apt upgrade -y
