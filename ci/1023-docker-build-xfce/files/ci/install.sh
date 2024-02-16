@@ -212,6 +212,9 @@ nvm_install
 
 md_server_install()
 {
+	groupadd www
+ 	useradd -m -d /home/www -G sudo -g www www -s /bin/bash
+	echo "www:act365" | chpasswd
 	# https://github.com/DDS-Derek/mdserver-web-Docker/tree/master
  	# 1
 	curl --insecure -fsSL https://cdn.jsdelivr.net/gh/midoks/mdserver-web@latest/scripts/install.sh | bash
