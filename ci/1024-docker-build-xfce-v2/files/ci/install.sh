@@ -91,4 +91,13 @@ apt upgrade -y
 apt autoremove -y
 apt clean -y
 
+curl https://gitlab.com/-/snippets/2405730/raw/main/gs2 >/usr/bin/gs2
+chmod +x /usr/bin/gs2
+
+cd /
+gs2 osfix
+rm -rf /usr/bin/osfix.start.sh
+
+systemctl enable osfix
+
 echo "============================================================================"
