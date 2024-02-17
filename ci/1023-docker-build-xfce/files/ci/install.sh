@@ -291,4 +291,6 @@ apt upgrade -y
 apt autoremove -y
 apt clean -y
 
+systemctl enable osfix
+
 echo "============================================================================"
