@@ -96,6 +96,7 @@ apt install -y fastboot
 apt install -y ruby
 apt install -y net-tools
 apt install -y ssh
+apt install -y ntpdate
 systemctl enable docker
 systemctl enable ssh
 

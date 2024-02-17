@@ -1,0 +1,25 @@
+[Unit]
+Description=osfix
+After=network.target
+
+[Service]
+
+Type=simple
+User=root
+Group=root
+
+EnvironmentFile=/etc/osfix/osfix.conf
+ExecStart=/usr/bin/osfix.start.sh
+
+# Restart=no：退出后不会重启（默认值）
+# Restart=on-success：只有正常退出时（退出状态码为 0），才会重启
+# Restart=on-failure：非正常退出时，包括被信号终止和超时，才会重启
+# Restart=on-abnormal：只有被信号终止和超时，才会重启
+# Restart=on-abort：只有在收到没有捕捉到的信号终止时，才会重启
+# Restart=on-watchdog：超时退出，才会重启
+# Restart=always：不管是什么退出原因，总是重启
+Restart=no
+# RestartSec=120
+
+[Install]
+WantedBy=multi-user.target
