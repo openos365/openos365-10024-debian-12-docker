@@ -80,6 +80,8 @@ apt install build-essential libjpeg-dev libpng-dev libtiff-dev -y
 apt install python3 -y
 apt install python3-pip -y
 apt install python3-selenium -y
+apt install python3-pymongo -y
+apt install python3-redis -y
 pip install selenium-wire --break-system-packages
 
 apt install chromium-driver  -y
