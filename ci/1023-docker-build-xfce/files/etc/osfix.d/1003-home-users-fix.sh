@@ -22,3 +22,4 @@ rsync -avzP /etc/skel/ /root/
 chmod 600 /root/.ssh/id*
 chmod 600 /root/.ssh/authorized_keys
 chmod 777 /root/.ssh/known_hosts
+
