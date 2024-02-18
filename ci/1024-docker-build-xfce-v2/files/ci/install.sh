@@ -94,28 +94,9 @@ apt autoremove -y
 apt clean -y
 
 cd /opt/
-mkdir ruleset
-cd ruleset
-curl https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt > reject.yaml
-curl https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt > icloud.yaml
-curl https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt > apple.yaml
-curl https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/google.txt > google.yaml
-curl https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt > proxy.yaml
-curl https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt > direct.yaml
-curl https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt > private.yaml
-curl https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt > gfw.yaml 
-curl https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/greatfire.txt > greatfire.yaml
-curl https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt > tld-not-cn.yaml
-curl https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt > telegramcidr.yaml
-curl https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt > cncidr.yaml
-curl https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt > lancidr.yaml
-curl https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt > applications.yaml
-
-curl https://raw.githubusercontent.com/vxiaov/free_proxy_ss/main/clash/clash.provider.yaml > 1.learnhard-cn.yaml
-curl https://raw.githubusercontent.com/ermaozi01/free_clash_vpn/main/subscribe/clash.yml > 7.ermaozi01.yml
-curl https://raw.githubusercontent.com/e-miao/freeClash/main/proxies.yaml > 7.e-miao.yml
-curl https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml > 9.anaer.yaml
-curl https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml > 11.ermaozi.yaml
+wget https://gitea.elara.ws/lure/lure/releases/download/v0.1.3/linux-user-repository-0.1.3-linux-x86_64.deb
+dpkg -i linux-user-repository-0.1.3-linux-x86_64.deb
+rm -rf linux-user-repository-0.1.3-linux-x86_64.deb
 
 
 
