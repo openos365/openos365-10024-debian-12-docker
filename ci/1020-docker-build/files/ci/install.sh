@@ -13,6 +13,14 @@ apt update -y
 apt upgrade -y
 apt autoremove -y
 apt clean
+apt-get autoremove -y 
+apt-get clean 
+rm -rf \
+        /tmp/* \
+        /var/lib/apt/lists/* \
+        /var/tmp/* \
+        /var/log/* \
+        /root/.cache
 df -h
 
 
