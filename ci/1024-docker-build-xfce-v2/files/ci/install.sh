@@ -82,7 +82,14 @@ apt install python3-pip -y
 apt install python3-selenium -y
 apt install python3-pymongo -y
 apt install python3-redis -y
+
+apt install -y ethtool
+apt install -y python3-scrapy
+
 pip install selenium-wire --break-system-packages
+pip install scrapeops-scrapy --break-system-packages
+pip install scrapeops-scrapy-proxy-sdk --break-system-packages
+
 
 apt install chromium-driver  -y
 apt install chromium  -y
