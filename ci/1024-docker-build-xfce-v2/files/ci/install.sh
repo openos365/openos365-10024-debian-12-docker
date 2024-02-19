@@ -90,6 +90,7 @@ pip install selenium-wire --break-system-packages
 pip install scrapeops-scrapy --break-system-packages
 pip install scrapeops-scrapy-proxy-sdk --break-system-packages
 
+pip3 install git+https://github.com/tomquirk/linkedin-api.git --break-system-packages
 
 apt install chromium-driver  -y
 apt install chromium  -y
