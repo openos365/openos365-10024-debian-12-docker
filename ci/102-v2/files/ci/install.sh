@@ -294,4 +294,13 @@ apt clean -y
 
 systemctl enable osfix
 
+mkdir -p /etc/buildinfo/v2/
+cd /etc/buildinfo/v2/
+
+date > /build_date.txt
+apt list --installed > apt.list.installed.txt
+apt list > /apt.list.txt
+df -h > df.txt
+
+
 echo "============================================================================"
