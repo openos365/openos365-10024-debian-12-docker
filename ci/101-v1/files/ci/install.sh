@@ -36,4 +36,12 @@ apt upgrade -y
 apt autoremove -y
 apt clean -y
 
+mkdir -p /etc/buildinfo/v1/
+cd /etc/buildinfo/v1/
+
+date > /build_date.txt
+apt list --installed > apt.list.installed.txt
+apt list > /apt.list.txt
+df -h > df.txt
+
 echo "============================================================================"
