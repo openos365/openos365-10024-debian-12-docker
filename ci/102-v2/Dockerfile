@@ -1,4 +1,4 @@
-FROM registry.cn-hangzhou.aliyuncs.com/openos365/openos365-10024-debian-12-docker-v1:latest
+FROM openos365/openos365-10024-debian-12-docker-v1:latest
 
 # 1
 ADD files/ /
