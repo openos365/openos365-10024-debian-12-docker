@@ -1,4 +1,4 @@
-FROM openos365/openos365-10024-debian-12-docker-v0:latest
+FROM openos365/openos365-10024-debian-12-docker-v23q1:latest
 
 # 1
 ADD files/ /
