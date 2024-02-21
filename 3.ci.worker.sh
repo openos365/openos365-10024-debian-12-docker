@@ -79,7 +79,7 @@ sudo df -h
 
     # 6
     cd $CMD_PATH
-    for ci_dir in `ls -d -1 ci/1* | sort`
+    for ci_dir in `ls -d -1 ci/v* | sort`
     do
         echo $ci_dir
         if [ -f $ci_dir/1.ci.run.sh ];then
