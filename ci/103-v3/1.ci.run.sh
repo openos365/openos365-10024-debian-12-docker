@@ -7,29 +7,36 @@ cd $CMD_PATH
 sudo df -h
 sudo rm -rf /usr/local/lib/android # will release about 10 GB if you don't need Android
 sudo rm -rf /usr/share/dotnet # will release about 20GB if you don't need .NET
+# https://github.com/jlumbroso/free-disk-space/blob/main/action.yml
+sudo rm -rf /opt/ghc
+sudo rm -rf /usr/local/.ghcup || true
+sudo rm -rf ~/.nvm/
+sudo rm -rf ~/.m2/
+rm -rf ~/.nvm/
+rm -rf ~/.m2/
+sudo apt-get remove -y '^aspnetcore-.*' || echo "::warning::The command [sudo apt-get remove -y '^aspnetcore-.*'] failed to complete successfully. Proceeding..."
+sudo apt-get remove -y '^dotnet-.*' --fix-missing || echo "::warning::The command [sudo apt-get remove -y '^dotnet-.*' --fix-missing] failed to complete successfully. Proceeding..."
+sudo apt-get remove -y '^llvm-.*' --fix-missing || echo "::warning::The command [sudo apt-get remove -y '^llvm-.*' --fix-missing] failed to complete successfully. Proceeding..."
+sudo apt-get remove -y 'php.*' --fix-missing || echo "::warning::The command [sudo apt-get remove -y 'php.*' --fix-missing] failed to complete successfully. Proceeding..."
+sudo apt-get remove -y '^mongodb-.*' --fix-missing || echo "::warning::The command [sudo apt-get remove -y '^mongodb-.*' --fix-missing] failed to complete successfully. Proceeding..."
+sudo apt-get remove -y '^mysql-.*' --fix-missing || echo "::warning::The command [sudo apt-get remove -y '^mysql-.*' --fix-missing] failed to complete successfully. Proceeding..."
+sudo apt-get remove -y azure-cli google-chrome-stable firefox powershell mono-devel libgl1-mesa-dri --fix-missing || echo "::warning::The command [sudo apt-get remove -y azure-cli google-chrome-stable firefox powershell mono-devel libgl1-mesa-dri --fix-missing] failed to complete successfully. Proceeding..."
+sudo apt-get remove -y google-cloud-sdk --fix-missing || echo "::debug::The command [sudo apt-get remove -y google-cloud-sdk --fix-missing] failed to complete successfully. Proceeding..."
+sudo apt-get remove -y google-cloud-cli --fix-missing || echo "::debug::The command [sudo apt-get remove -y google-cloud-cli --fix-missing] failed to complete successfully. Proceeding..."
+sudo apt-get autoremove -y || echo "::warning::The command [sudo apt-get autoremove -y] failed to complete successfully. Proceeding..."
+sudo apt-get clean || echo "::warning::The command [sudo apt-get clean] failed to complete successfully. Proceeding..."
 
 sudo docker image prune --all --force
 
-sudo rm -rf ~/.nvm/
-sudo rm -rf ~/.m2/
+sudo rm -rf /opt/hostedtoolcache/CodeQL
 
-sleep 5
+sudo swapoff -a || true
+sudo rm -f /mnt/swapfile || true
+free -h
 
-sudo df -h
-
-# https://github.com/jlumbroso/free-disk-space/blob/main/action.yml
-sudo rm -rf /opt/ghc
-
-sudo apt-get remove -y '^dotnet-.*'
-sudo apt-get remove -y '^llvm-.*'
-sudo apt-get remove -y 'php.*'
-sudo apt-get remove -y '^mongodb-.*'
-sudo apt-get remove -y '^mysql-.*'
-sudo apt-get remove -y azure-cli google-cloud-sdk google-chrome-stable firefox powershell mono-devel libgl1-mesa-dri
-sudo apt-get autoremove -y
-sudo apt-get clean
 echo "$AGENT_TOOLSDIRECTORY"
 sudo rm -rf "$AGENT_TOOLSDIRECTORY"
+sudo df -h
 
 docker build . -f Dockerfile \
 --progress plain \
