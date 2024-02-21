@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    name: 1.ci
+    name: v23q1.ci
     runs-on: ubuntu-latest
     steps:
       - name: Install SSH Key
