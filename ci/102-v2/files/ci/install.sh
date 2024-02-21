@@ -77,7 +77,8 @@ apt install -y dosfstools
 apt install -y rsync 
 apt install -y qemu-system-x86
 apt install -y docker.io 
-apt install -y docker-compose 
+# apt install -y docker-compose 
+curl -SL https://github.com/docker/compose/releases/download/v2.24.5/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
 apt install -y golang
 apt install -y maven
 apt install -y tree
