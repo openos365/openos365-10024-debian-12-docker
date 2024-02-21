@@ -1,11 +1,11 @@
-name: v3.ci
+name: v23q4.ci
 
 on:
   push:
     branches:
       - 'v*'
   schedule:
-    - cron: '0 */12 * * *'
+    - cron: '0 14 * * 0'
   workflow_dispatch:
 
 jobs:

@@ -106,8 +106,8 @@ wget https://gitea.elara.ws/lure/lure/releases/download/v0.1.3/linux-user-reposi
 dpkg -i linux-user-repository-0.1.3-linux-x86_64.deb
 rm -rf linux-user-repository-0.1.3-linux-x86_64.deb
 
-mkdir -p /etc/buildinfo/v3/
-cd /etc/buildinfo/v3/
+mkdir -p /etc/buildinfo/v23q4/
+cd /etc/buildinfo/v23q4/
 
 date > /build_date.txt
 apt list --installed > apt.list.installed.txt
