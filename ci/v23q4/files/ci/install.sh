@@ -106,6 +106,11 @@ wget https://gitea.elara.ws/lure/lure/releases/download/v0.1.3/linux-user-reposi
 dpkg -i linux-user-repository-0.1.3-linux-x86_64.deb
 rm -rf linux-user-repository-0.1.3-linux-x86_64.deb
 
+# https://blog.csdn.net/qq_21891743/article/details/132818491
+apt install -y sysbench
+sysbench --version
+
+
 mkdir -p /etc/buildinfo/v23q4/
 cd /etc/buildinfo/v23q4/
 
