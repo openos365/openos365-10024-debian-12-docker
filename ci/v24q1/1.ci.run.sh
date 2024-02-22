@@ -46,7 +46,16 @@ cd /opt
 du -hs
 sudo rm -rf /opt/
 cd ~
-rm -rf .composer
+sudo rm -rf .composer
+sudo rm -rf .cargo
+sudo rm -rf .dotnet
+sudo rm -rf /usr/local/.ghcup
+sudo rm -rf .rustup
+sudo rm -rf factory
+sudo rm -rf perflog
+sudo rm -rf runners
+sudo rm -rf warmup
+sudo rm -rf work
 apt list --installed
 du -hs
 
