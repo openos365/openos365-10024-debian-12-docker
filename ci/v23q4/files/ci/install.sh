@@ -111,13 +111,6 @@ apt install -y sysbench
 sysbench --version
 
 
-mkdir -p /etc/buildinfo/v23q4/
-cd /etc/buildinfo/v23q4/
-
-date > /build_date.txt
-apt list --installed > apt.list.installed.txt
-apt list > /apt.list.txt
-df -h > df.txt
-
+update_install_remove_clean v23q4 remove
 
 echo "============================================================================"
