@@ -10,11 +10,11 @@ apt update -y
 apt upgrade -y
 
 
-apt remove --purge -y $(dpkg -l | grep linux-image | awk '{print $2}')
-dpkg -l | grep linux-image | awk '{print $2}'
-apt update -y
-apt upgrade -y
-apt -y install --no-install-recommends linux-image-amd64
+# apt remove --purge -y $(dpkg -l | grep linux-image | awk '{print $2}')
+# dpkg -l | grep linux-image | awk '{print $2}'
+# apt update -y
+# apt upgrade -y
+# apt -y install --no-install-recommends linux-image-amd64
 
 echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
