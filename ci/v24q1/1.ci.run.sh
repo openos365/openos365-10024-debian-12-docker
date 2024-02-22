@@ -37,6 +37,10 @@ sudo rm -f /mnt/swapfile || true
 
 ls -al ~/
 ls -al /opt/
+cd /opt
+du -hs
+cd ~
+du -hs
 
 free -h
 
