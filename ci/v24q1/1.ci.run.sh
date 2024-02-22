@@ -41,6 +41,7 @@ cd /opt
 du -hs
 cd ~
 rm -rf .composer
+apt list --installed
 du -hs
 
 free -h
