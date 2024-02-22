@@ -7,5 +7,4 @@ export TERM=xterm-256color
 echo $PROJECT_NAME
 cd $CMD_PATH
 
-update_clean v23q1
-
+update_install_remove_clean v23q1 remove

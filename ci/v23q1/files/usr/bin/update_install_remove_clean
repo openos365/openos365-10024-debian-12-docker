@@ -1,0 +1,77 @@
+#!/usr/bin/env bash
+
+cd $PWD
+
+
+date
+# 1 upgrade
+apt update -y
+apt upgrade -y
+
+# 2 conf
+mkdir conf
+cd conf
+touch debconf.txt
+touch packages.to.install.txt
+touch packages.to.remove.txt
+        
+function my_debconf_set_selections()
+{
+        
+	while read conf
+	do
+  		echo $conf_str
+  		debconf-set-selections <<< "$conf_str"
+	done < debconf.txt
+}
+
+function my_pkg_install_remove()
+{
+
+	while read pkg
+	do
+  	        echo $pkg
+  		apt install -y $pkg
+	done < packages.to.install.txt
+
+	while read pkg
+	do
+ 		echo $pkg
+  		apt install -y $pkg
+	done < packages.to.remove.txt
+}
+my_debconf_set_selections
+my_pkg_install_remove
+
+apt update -y
+apt upgrade -y
+apt autoremove -y
+apt clean
+apt-get autoremove -y 
+apt-get clean
+
+if [ ! -z $1 ];then
+    mkdir -p /etc/buildinfo/$1/
+    cd /etc/buildinfo/$1/
+    date > /build_date.txt
+    apt list --installed > apt.list.installed.txt
+    apt list > /apt.list.txt
+    df -h > df.txt
+fi
+
+if [ ! -z $2 ];then
+    rm -rf \
+        /tmp/* \
+        /var/lib/apt/lists/* \
+        /var/tmp/* \
+        /var/log/* \
+        /root/.cache
+fi
+
+date
+
+
+
+
+
+
