@@ -8,5 +8,5 @@ cd $CMD_PATH
 export DEBIAN_FRONTEND="noninteractive"
 
 cd $CMD_PATH
-update_install_remove_clean v23q1 remove
+update_install_remove_clean v23q3 remove
 
