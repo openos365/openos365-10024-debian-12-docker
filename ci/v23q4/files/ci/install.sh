@@ -16,15 +16,12 @@ apt upgrade -y
 # apt upgrade -y
 # apt -y install --no-install-recommends linux-image-amd64
 
-echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
-echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 
 update_install_remove_clean v23q4 remove
+
 # https://blog.csdn.net/qq_21891743/article/details/132818491
 sysbench --version
 
 systemctl enable docker
 systemctl enable ssh
-
-
 
