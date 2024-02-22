@@ -55,7 +55,6 @@ sudo rm -rf factory
 sudo rm -rf perflog
 sudo rm -rf runners
 sudo rm -rf warmup
-sudo rm -rf work
 apt list --installed
 du -hs
 
