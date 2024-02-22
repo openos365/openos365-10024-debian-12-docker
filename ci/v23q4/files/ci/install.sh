@@ -334,4 +334,3 @@ sysbench --version
 
 update_install_remove_clean v23q4 remove
 
-echo "============================================================================"
