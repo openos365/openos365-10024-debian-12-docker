@@ -12,6 +12,7 @@ apt update -y
 apt upgrade -y
 
 apt -y install zstd
+
 apt -y install --no-install-recommends linux-image-amd64
 apt -y install --no-install-recommends systemd-sysv 
 apt -y install --no-install-recommends network-manager 
