@@ -20,5 +20,6 @@ apt -y install --no-install-recommends live-boot
 apt -y install --no-install-recommends grub2
 
 echo "root:root" | chpasswd
+
 update_install_remove_clean v23q3 remove
 
