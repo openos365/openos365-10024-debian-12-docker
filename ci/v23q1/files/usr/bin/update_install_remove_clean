@@ -9,15 +9,17 @@ apt update -y
 apt upgrade -y
 
 # 2 conf
-mkdir conf
+mkdir -p conf/scripts
 cd conf
 touch debconf.txt
 touch packages.to.install.txt
 touch packages.to.remove.txt
+touch scripts/101.ci.script.sh
+
         
 function my_debconf_set_selections()
 {
-        
+    cd $PWD    
 	while read conf
 	do
   		echo $conf_str
@@ -27,7 +29,7 @@ function my_debconf_set_selections()
 
 function my_pkg_install_remove()
 {
-
+	cd $PWD
 	while read pkg
 	do
   	        echo $pkg
@@ -40,8 +42,23 @@ function my_pkg_install_remove()
   		apt install -y $pkg
 	done < packages.to.remove.txt
 }
+
+function my_scripts_run()
+{
+	cd $PWD
+	cd scripts
+	for my_script in `ls | sort`
+    do
+        if [ -f my_script ];then
+			chmod +x $my_script
+            ./$my_script
+        fi
+    done
+}
+    
 my_debconf_set_selections
 my_pkg_install_remove
+my_scripts_run
 
 apt update -y
 apt upgrade -y
