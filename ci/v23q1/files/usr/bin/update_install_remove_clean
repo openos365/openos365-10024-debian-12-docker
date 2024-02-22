@@ -15,6 +15,7 @@ touch debconf.txt
 touch packages.to.install.txt
 touch packages.to.remove.txt
 touch scripts/101.ci.script.sh
+chmod +x scripts/101.ci.script.sh
 
         
 function my_debconf_set_selections()
