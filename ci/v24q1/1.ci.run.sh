@@ -27,7 +27,12 @@ sudo apt-get autoremove -y || echo "::warning::The command [sudo apt-get autorem
 sudo apt-get clean || echo "::warning::The command [sudo apt-get clean] failed to complete successfully. Proceeding..."
 sudo apt-get remove -y '^firefox-.*'
 sudo apt-get remove -y '^chrom.*'
-sudo rm -rf /home/linuxbrew/.linuxbrew/
+sudo apt-get remove -y '^golang-.*'
+sudo apt-get remove -y '^python3-.*'
+sudo apt-get remove -y '^r-cran-.*'
+
+
+sudo rm -rf /home/linuxbrew/
 sudo docker image prune --all --force
 
 sudo rm -rf /opt/hostedtoolcache/CodeQL
@@ -39,6 +44,7 @@ ls -al ~/
 ls -al /opt/
 cd /opt
 du -hs
+sudo rm -rf /opt/
 cd ~
 rm -rf .composer
 apt list --installed
