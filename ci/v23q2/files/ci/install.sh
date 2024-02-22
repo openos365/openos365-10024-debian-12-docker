@@ -6,16 +6,6 @@ export PROJECT_NAME="${CMD_PATH##*/}"
 echo $PROJECT_NAME
 cd $CMD_PATH
 
-echo "============================================================================"
-pwd
-
-echo "============================================================================"
-whoami
-
-echo "============================================================================"
-env
-
-echo "============================================================================"
 # TODO HERE
 
 apt update -y
@@ -30,17 +20,6 @@ apt -y install --no-install-recommends grub2
 
 echo "root:root" | chpasswd
 
-apt update -y
-apt upgrade -y
-apt autoremove -y
-apt clean -y
-
-mkdir -p /etc/buildinfo/v23q2/
-cd /etc/buildinfo/v23q2/
-
-date > /build_date.txt
-apt list --installed > apt.list.installed.txt
-apt list > /apt.list.txt
-df -h > df.txt
+update_clean v23q2
 
 echo "============================================================================"
