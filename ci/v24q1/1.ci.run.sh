@@ -25,7 +25,9 @@ sudo apt-get remove -y google-cloud-sdk --fix-missing || echo "::debug::The comm
 sudo apt-get remove -y google-cloud-cli --fix-missing || echo "::debug::The command [sudo apt-get remove -y google-cloud-cli --fix-missing] failed to complete successfully. Proceeding..."
 sudo apt-get autoremove -y || echo "::warning::The command [sudo apt-get autoremove -y] failed to complete successfully. Proceeding..."
 sudo apt-get clean || echo "::warning::The command [sudo apt-get clean] failed to complete successfully. Proceeding..."
-
+sudo apt-get remove -y '^firefox-.*'
+sudo apt-get remove -y '^chrom.*'
+sudo rm -rf /home/linuxbrew/.linuxbrew/
 sudo docker image prune --all --force
 
 sudo rm -rf /opt/hostedtoolcache/CodeQL
@@ -36,6 +38,8 @@ free -h
 
 echo "$AGENT_TOOLSDIRECTORY"
 sudo rm -rf "$AGENT_TOOLSDIRECTORY"
+apt clean
+
 sudo df -h
 
 docker build . -f Dockerfile \
