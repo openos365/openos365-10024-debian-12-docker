@@ -20,6 +20,5 @@ apt -y install --no-install-recommends grub2
 
 echo "root:root" | chpasswd
 
-update_clean v23q2
+update_install_remove_clean v23q1 remove
 
-echo "============================================================================"
