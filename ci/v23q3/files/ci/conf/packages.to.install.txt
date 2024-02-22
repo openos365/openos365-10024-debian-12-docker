@@ -1,3 +1,8 @@
+linux-image-amd64
+systemd-sysv 
+network-manager 
+live-boot
+grub2
 task-xfce-desktop
 calamares
 calamares-settings-debian
@@ -22,3 +27,5 @@ expect
 xfce4
 fcitx5
 fcitx5-chinese-addons
+zstd
+ntpdate

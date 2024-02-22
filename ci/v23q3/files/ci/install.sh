@@ -8,18 +8,8 @@ cd $CMD_PATH
 export DEBIAN_FRONTEND="noninteractive"
 
 cd $CMD_PATH
-apt update -y
-apt upgrade -y
 
-apt -y install zstd
-
-apt -y install --no-install-recommends linux-image-amd64
-apt -y install --no-install-recommends systemd-sysv 
-apt -y install --no-install-recommends network-manager 
-apt -y install --no-install-recommends live-boot
-apt -y install --no-install-recommends grub2
 
 echo "root:root" | chpasswd
 
 update_install_remove_clean v23q3 remove
-
