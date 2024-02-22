@@ -34,11 +34,15 @@ sudo rm -rf /opt/hostedtoolcache/CodeQL
 
 sudo swapoff -a || true
 sudo rm -f /mnt/swapfile || true
+
+ls -al ~/
+ls -al /opt/
+
 free -h
 
 echo "$AGENT_TOOLSDIRECTORY"
 sudo rm -rf "$AGENT_TOOLSDIRECTORY"
-apt clean
+sudo apt clean
 
 sudo df -h
 
