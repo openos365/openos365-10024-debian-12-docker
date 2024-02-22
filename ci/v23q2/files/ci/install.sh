@@ -26,7 +26,6 @@ apt -y install --no-install-recommends linux-image-amd64
 apt -y install --no-install-recommends systemd-sysv 
 apt -y install --no-install-recommends network-manager 
 apt -y install --no-install-recommends live-boot
-apt -y install --no-install-recommends calamares calamares-settings-debian
 apt -y install --no-install-recommends grub2
 
 echo "root:root" | chpasswd
@@ -36,8 +35,8 @@ apt upgrade -y
 apt autoremove -y
 apt clean -y
 
-mkdir -p /etc/buildinfo/v1/
-cd /etc/buildinfo/v1/
+mkdir -p /etc/buildinfo/v23q2/
+cd /etc/buildinfo/v23q2/
 
 date > /build_date.txt
 apt list --installed > apt.list.installed.txt
