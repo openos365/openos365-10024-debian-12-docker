@@ -22,6 +22,60 @@ ls -al
 apt update -y
 apt upgrade -y
 
+function pkg_install_remove()
+{
+	cd $CMD_PATH
+	while read pkg
+	do
+  		echo $pkg
+  		apt install -y --no-install-recommends $pkg
+	done < packages.list.txt
+
+	while read pkg
+	do
+ 		echo $pkg
+  		apt install -y $pkg
+	done < remove.list.txt
+}
+pkg_install_remove
+
+apt install -y exfatprogs
+apt install -y debootstrap 
+apt install -y squashfs-tools
+apt install -y xorriso
+apt install -y isolinux
+apt install -y syslinux-efi
+apt install -y grub-pc-bin
+apt install -y grub-efi-amd64-bin
+apt install -y grub-efi-ia32-bin
+apt install -y mtools
+apt install -y dosfstools
+apt install -y rsync 
+apt install -y qemu-system-x86
+apt install -y docker.io 
+# apt install -y docker-compose 
+curl -SL https://github.com/docker/compose/releases/download/v2.24.5/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
+apt install -y golang
+apt install -y maven
+apt install -y tree
+apt install -y extlinux
+apt install -y kpartx
+apt install -y p7zip-full grub2-common mtools xorriso squashfs-tools-ng jq
+apt install -y cloud-utils
+apt install -y deepin-terminal
+apt install -y caddy
+apt install -y repo
+apt install -y ostree
+apt install -y wget 
+apt install -y gpg
+apt install -y adb
+apt install -y fastboot
+apt install -y ruby
+apt install -y net-tools
+apt install -y ssh
+apt install -y ntpdate
+systemctl enable docker
+systemctl enable ssh
 
 function nvm_install()
 {
@@ -203,6 +257,24 @@ rsync -avP ./connect /usr/bin/connect
 chmod +x /usr/bin/connect
 cd ~/
 rm -rf connect-proxy
+
+export OSH="/etc/skel/.oh-my-bash"; bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" --unattended
+
+# https://pve.proxmox.com/wiki/Install_Proxmox_VE_on_Debian_12_Bookworm
+wget https://mirrors.ustc.edu.cn/proxmox/debian/proxmox-release-bookworm.gpg -O /etc/apt/trusted.gpg.d/proxmox-release-bookworm.gpg
+echo "deb [arch=amd64] https://mirrors.ustc.edu.cn/proxmox/debian/pve/ bookworm pve-no-subscription" > /etc/apt/sources.list.d/pve-install-repo.list
+apt update -y
+apt upgrade -y
+
+
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list
+rm -f packages.microsoft.gpg
+apt install -y apt-transport-https
+apt update -y
+apt install -y code 
+
 
 apt install caddy -y
 
