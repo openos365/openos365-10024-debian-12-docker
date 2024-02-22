@@ -40,10 +40,11 @@ ls -al /opt/
 cd /opt
 du -hs
 cd ~
+rm -rf .composer
 du -hs
 
 free -h
-
+cd $CMD_PATH
 echo "$AGENT_TOOLSDIRECTORY"
 sudo rm -rf "$AGENT_TOOLSDIRECTORY"
 sudo apt clean
