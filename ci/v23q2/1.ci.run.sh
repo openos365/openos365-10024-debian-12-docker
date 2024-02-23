@@ -31,4 +31,3 @@ cd $CMD_PATH
 rm -rf buildinfo
 cid=`docker run -d ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:latest /bin/true`
 docker cp $cid:/etc/buildinfo/ "${CMD_PATH}/"
-
