@@ -53,7 +53,7 @@ docker push registry.cn-hangzhou.aliyuncs.com/${GITHUB_REPOSITORY}-$GITHUB_REF_N
 docker push ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:$GITHUB_RUN_NUMBER
 docker push ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:latest
 
-docker run ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:latest apt list --installed > apt.list.installed.txt
-docker run ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:latest apt list > apt.list.txt
+cid=`docker run -d ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:latest /bin/true`
+docker cp $cid:/etc/buildinfo/ "${CMD_PATH}/ect_buildinfo/"
 
 echo "============================================================================"
