@@ -51,7 +51,7 @@ function my_scripts_run()
 	cd scripts
 	for my_script in `ls | sort`
     do
-        if [ -f my_script ];then
+        if [ -f $my_script ];then
 			chmod +x $my_script
             ./$my_script
         fi
