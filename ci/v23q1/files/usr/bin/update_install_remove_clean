@@ -87,6 +87,8 @@ if [ ! -z $2 ];then
         /root/.cache
 fi
 
+apt update -y
+apt upgrade -y
 date
 
 
