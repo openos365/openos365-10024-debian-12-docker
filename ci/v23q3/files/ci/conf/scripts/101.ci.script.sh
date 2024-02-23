@@ -4,4 +4,5 @@ export CMD_PATH=$(cd `dirname $0`; pwd)
 export TERM=xterm-256color
 cd $CMD_PATH
 date
-echo "root:root" | chpasswd
+echo "root:act365" | chpasswd
+date

@@ -5,10 +5,13 @@ umask 022
 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin
 export PATH
 
+echo "root:act365" | chpasswd
+
 cd /home/
 
 for user in `ls`
 do
+    sudo usermod -aG docker $user
     sudo -u $user rsync -avP /etc/skel/ /home/$user/
     echo "${user}  ALL=(ALL:ALL) NOPASSWD: ALL" | tee -a /etc/sudoers.d/osfix-${user}-nopassword
     sudo -u $user chmod 600 /home/$user/.ssh/id*
