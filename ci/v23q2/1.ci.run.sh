@@ -27,6 +27,8 @@ docker build . -f Dockerfile \
 docker push ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:$GITHUB_RUN_NUMBER
 docker push ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:latest
 
+cd $CMD_PATH
+rm -rf buildinfo
 cid=`docker run -d ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:latest /bin/true`
-docker cp $cid:/etc/buildinfo/ "${CMD_PATH}/ect_buildinfo/"
+docker cp $cid:/etc/buildinfo/ "${CMD_PATH}/"
 
