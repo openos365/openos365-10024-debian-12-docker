@@ -1,0 +1,8 @@
+Filesystem      Size  Used Avail Use% Mounted on
+overlay          73G   33G   40G  46% /
+tmpfs            64M     0   64M   0% /dev
+shm              64M     0   64M   0% /dev/shm
+/dev/root        73G   33G   40G  46% /etc/resolv.conf
+tmpfs           7.9G     0  7.9G   0% /proc/acpi
+tmpfs           7.9G     0  7.9G   0% /sys/firmware
+tmpfs           7.9G     0  7.9G   0% /proc/scsi
