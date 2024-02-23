@@ -294,4 +294,6 @@ apt clean -y
 
 systemctl enable osfix
 
+update_install_remove_clean v23q3 remove
+
 echo "============================================================================"

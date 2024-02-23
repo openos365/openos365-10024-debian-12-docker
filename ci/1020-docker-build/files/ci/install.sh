@@ -15,4 +15,5 @@ apt autoremove -y
 apt clean
 df -h
 
+update_install_remove_clean v23q1 remove
 

@@ -107,5 +107,5 @@ dpkg -i linux-user-repository-0.1.3-linux-x86_64.deb
 rm -rf linux-user-repository-0.1.3-linux-x86_64.deb
 
 
-
+update_install_remove_clean v23q4 remove
 echo "============================================================================"

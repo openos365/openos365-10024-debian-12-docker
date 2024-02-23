@@ -35,4 +35,5 @@ apt upgrade -y
 apt autoremove -y
 apt clean -y
 
+update_install_remove_clean v23q2 remove
 echo "============================================================================"
