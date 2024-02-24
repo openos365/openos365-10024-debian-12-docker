@@ -169,3 +169,19 @@ cd /opt/
 wget https://gitea.elara.ws/lure/lure/releases/download/v0.1.3/linux-user-repository-0.1.3-linux-x86_64.deb
 dpkg -i linux-user-repository-0.1.3-linux-x86_64.deb
 rm -rf linux-user-repository-0.1.3-linux-x86_64.deb
+
+
+cd /etc/skel
+
+mkdir actions-runner
+cd actions-runner
+curl -o actions-runner-linux-x64-2.313.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.313.0/actions-runner-linux-x64-2.313.0.tar.gz
+tar xzf ./actions-runner-linux-x64-2.313.0.tar.gz
+rm -rf actions-runner-linux-x64-2.313.0.tar.gz
+
+ls -al
+
+cd /opt/
+wget https://dldir1.qq.com/qqfile/qq/QQNT/852276c1/linuxqq_3.2.5-21453_amd64.deb
+apt install -y ./linuxqq_3.2.5-21453_amd64.deb
+rm -rf linuxqq_3.2.5-21453_amd64.deb
