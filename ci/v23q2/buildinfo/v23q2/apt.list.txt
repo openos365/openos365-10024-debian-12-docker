@@ -16606,14 +16606,14 @@ libayatana-appindicator0.1-cil/stable 0.5.92-1 amd64
 libayatana-appindicator1/stable 0.5.92-1 amd64
 libayatana-appindicator3-0.1-cil-dev/stable 0.5.92-1 amd64
 libayatana-appindicator3-0.1-cil/stable 0.5.92-1 amd64
-libayatana-appindicator3-1/stable 0.5.92-1 amd64
+libayatana-appindicator3-1/stable,now 0.5.92-1 amd64 [installed,automatic]
 libayatana-appindicator3-dev/stable 0.5.92-1 amd64
 libayatana-common-dev/stable 0.9.8-1 amd64
 libayatana-common0/stable 0.9.8-1 amd64
-libayatana-ido3-0.4-0/stable 0.9.3-1 amd64
+libayatana-ido3-0.4-0/stable,now 0.9.3-1 amd64 [installed,automatic]
 libayatana-ido3-dev/stable 0.9.3-1 amd64
 libayatana-indicator-dev/stable 0.9.3-1 amd64
-libayatana-indicator3-7/stable 0.9.3-1 amd64
+libayatana-indicator3-7/stable,now 0.9.3-1 amd64 [installed,automatic]
 libayatana-indicator3-dev/stable 0.9.3-1 amd64
 libayatana-indicator3-tools/stable 0.9.3-1 amd64
 libayatana-indicator7/stable 0.9.3-1 amd64
@@ -19411,10 +19411,10 @@ libdbuskit-dev/stable 0.1.1-3+b5 amd64
 libdbuskit0/stable 0.1.1-3+b5 amd64
 libdbusmenu-glib-dev/stable 18.10.20180917~bzr492+repack1-3 amd64
 libdbusmenu-glib-doc/stable 18.10.20180917~bzr492+repack1-3 all
-libdbusmenu-glib4/stable 18.10.20180917~bzr492+repack1-3 amd64
+libdbusmenu-glib4/stable,now 18.10.20180917~bzr492+repack1-3 amd64 [installed,automatic]
 libdbusmenu-gtk-dev/stable 18.10.20180917~bzr492+repack1-3 amd64
 libdbusmenu-gtk-doc/stable 18.10.20180917~bzr492+repack1-3 all
-libdbusmenu-gtk3-4/stable 18.10.20180917~bzr492+repack1-3 amd64
+libdbusmenu-gtk3-4/stable,now 18.10.20180917~bzr492+repack1-3 amd64 [installed,automatic]
 libdbusmenu-gtk3-dev/stable 18.10.20180917~bzr492+repack1-3 amd64
 libdbusmenu-gtk4/stable 18.10.20180917~bzr492+repack1-3 amd64
 libdbusmenu-jsonloader-dev/stable 18.10.20180917~bzr492+repack1-3 amd64
@@ -42027,6 +42027,7 @@ linuxdoc-tools/stable 0.9.82-1 amd64
 linuxinfo/stable 4.1.2-3 amd64
 linuxlogo/stable 6.0-0.1 amd64
 linuxptp/stable 3.1.1-4+b2 amd64
+linuxqq/now 3.2.5-21453 amd64 [installed,local]
 lios/stable 2.7.2-6 all
 liquidctl/stable 1.12.1-1 amd64
 liquidprompt/stable 2.1.2-1 all
