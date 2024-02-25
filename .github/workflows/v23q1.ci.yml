@@ -6,7 +6,7 @@ on:
       - 'v*'
   schedule:
     # https://www.box3.cn/page/crontab.html
-    - cron: '0 */2 * * *'
+    - cron: '0 2 * * 1'
   workflow_dispatch:
 
 jobs:
