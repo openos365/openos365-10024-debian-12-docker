@@ -5,7 +5,7 @@ export CMD_PATH=$(cd `dirname $0`; pwd)
 cd $CMD_PATH
 
 
-docker build . -f Dockerfile \
+docker build --no-cache . -f Dockerfile \
 --progress plain \
 -t ghcr.io/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:$GITHUB_RUN_NUMBER \
 -t ghcr.io/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:latest \
@@ -23,7 +23,7 @@ docker build . -f Dockerfile \
  docker push registry.cn-hangzhou.aliyuncs.com/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:latest
 # docker push hkccr.ccs.tencentyun.com/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:$GITHUB_RUN_NUMBER 
 # docker push hkccr.ccs.tencentyun.com/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:latest 
-docker push ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:$GITHUB_RUN_NUMBER
-docker push ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:latest
+# docker push ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:$GITHUB_RUN_NUMBER
+# docker push ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:latest
 
-echo "============================================================================"
+# echo "============================================================================"
