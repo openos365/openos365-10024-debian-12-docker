@@ -29,3 +29,4 @@ fcitx5
 fcitx5-chinese-addons
 zstd
 ntpdate
+dos2unix

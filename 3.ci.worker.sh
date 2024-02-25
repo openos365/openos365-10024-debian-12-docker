@@ -22,38 +22,38 @@ if [ ! -z "${GITHUB_REPOSITORY}" ];then
     # 0
     # sudo apt update -y
     # sudo apt upgrade -y
-    sudo apt install -y dos2unix
-    cd ~
+    # sudo apt install -y dos2unix
+    # cd ~
     # curl -LO https://storage.googleapis.com/container-diff/latest/container-diff-linux-amd64
     # sudo install container-diff-linux-amd64 /usr/bin/container-diff
     cd $CMD_PATH
     
-    # 1 
-    git config --global user.email "gnuhub@gmail.com"
-    git config --global user.name "gnuhub"
+    # # 1 
+    # git config --global user.email "gnuhub@gmail.com"
+    # git config --global user.name "gnuhub"
 
-    # 2
-    git remote -v
-    git remote set-url origin git@github.com:${GITHUB_REPOSITORY}.git
-    git remote -v
+    # # 2
+    # git remote -v
+    # git remote set-url origin git@github.com:${GITHUB_REPOSITORY}.git
+    # git remote -v
 
-    # 3
-    ssh-keygen -f "$HOME/.ssh/known_hosts" -R "frs.sourceforge.net"
-    ssh-keyscan "frs.sourceforge.net" >> $HOME/.ssh/known_hosts
-    ssh-keygen -f "$HOME/.ssh/known_hosts" -R "github.com"
-    ssh-keyscan "github.com" >> $HOME/.ssh/known_hosts
-    cat $HOME/.ssh/known_hosts
+    # # 3
+    # ssh-keygen -f "$HOME/.ssh/known_hosts" -R "frs.sourceforge.net"
+    # ssh-keyscan "frs.sourceforge.net" >> $HOME/.ssh/known_hosts
+    # ssh-keygen -f "$HOME/.ssh/known_hosts" -R "github.com"
+    # ssh-keyscan "github.com" >> $HOME/.ssh/known_hosts
+    # cat $HOME/.ssh/known_hosts
 
-    # 4
-    # curl https://raw.githubusercontent.com/openos365/openos365-00002-ci-github-actions-template/main/6.template.update.from.00002.sh > 6.template.update.from.00002.sh
-    # chmod +x 6.template.update.from.00002.sh
-    # sudo cp ./6.template.update.from.00002.sh /usr/bin/6.template.update.from.00002.sh
-    # 6.template.update.from.00002.sh
-    sudo cp ./p2 /usr/bin/p2
+    # # 4
+    # # curl https://raw.githubusercontent.com/openos365/openos365-00002-ci-github-actions-template/main/6.template.update.from.00002.sh > 6.template.update.from.00002.sh
+    # # chmod +x 6.template.update.from.00002.sh
+    # # sudo cp ./6.template.update.from.00002.sh /usr/bin/6.template.update.from.00002.sh
+    # # 6.template.update.from.00002.sh
+    # sudo cp ./p2 /usr/bin/p2
 
-    # 5
-    cd $CMD_PATH
-    p2 "CI-BOT:$(date +%Y.%m.%d-%H%M%S)-$GITHUB_REF_NAME-$GITHUB_RUN_NUMBER"
+    # # 5
+    # cd $CMD_PATH
+    # p2 "CI-BOT:$(date +%Y.%m.%d-%H%M%S)-$GITHUB_REF_NAME-$GITHUB_RUN_NUMBER"
 
 
     # 6
