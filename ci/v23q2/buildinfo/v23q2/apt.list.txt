@@ -2486,6 +2486,7 @@ chromium-tt-rss-notifier/stable 0.5.2-2.1 all
 chromium/stable-security,now 122.0.6261.57-1~deb12u1 amd64 [installed,automatic]
 chromono/stable 1.1.1-1.1+b1 amd64
 chronicle/stable 4.6-2.1 all
+chronograf/unknown 1.10.2-1 amd64
 chrony/stable 4.3-2+deb12u1 amd64
 chrootuid/stable 1.3-6.1 amd64
 chrpath/stable 0.16-2+b1 amd64
@@ -13722,8 +13723,12 @@ infernal-doc/stable 1.1.4-1 all
 infernal/stable 1.1.4-1 amd64
 infiniband-diags/stable 44.0-2 amd64
 infinoted/stable 0.7.2-1+b2 amd64
+influxctl/unknown 2.4.4 amd64
 influxdb-client/stable 1.6.7~rc0-1+b13 amd64
-influxdb/stable 1.6.7~rc0-1+b13 amd64
+influxdb2-cli/unknown,now 2.7.3-1 amd64 [installed,automatic]
+influxdb2-client/unknown 2.7.1-1 amd64
+influxdb2/unknown,now 2.7.5-1 amd64 [installed]
+influxdb/unknown 1.8.10-1 amd64
 infnoise/stable 0.3.3+dfsg-1 amd64
 info2man/stable 1.1-11 all
 info2www/stable 1.2.2.9-24.2 all
@@ -13999,7 +14004,7 @@ ivy/stable 2.5.1-2 all
 ivyplusplus/stable 1.40-1 all
 iw/stable 5.19-1 amd64
 iwatch/stable 0.2.2-10 all
-iwd/stable 2.3-1 amd64
+iwd/stable-security 2.3-1+deb12u1 amd64
 iwidgets4-doc/stable 4.1.1-2.1 all
 iwidgets4/stable 4.1.1-2.1 all
 iwyu/stable 8.18-2 amd64
@@ -14400,6 +14405,7 @@ kannel-extras/stable 1.4.5-12 amd64
 kannel/stable 1.4.5-12 amd64
 kanshi/stable 1.3.1-1 amd64
 kanyremote/stable 8.1-1.1 all
+kapacitor/unknown 1.7.1-1 amd64
 kapidox/stable 5.103.0-1 all
 kapman/stable 4:22.12.3-1 amd64
 kappanhang/stable 1.3-2+b5 amd64
@@ -61362,6 +61368,7 @@ tegaki-zinnia-japanese/stable 0.3-3 all
 tegaki-zinnia-simplified-chinese/stable 0.3-3 all
 tegrarcm/stable 1.8-2 amd64
 telegnome/stable 0.3.6-4 amd64
+telegraf/unknown,now 1.29.5-1 amd64 [installed]
 telegram-desktop/stable 4.6.5+ds-2 amd64
 telegram-send/stable 0.34-2 all
 telemetry-tempest-plugin/stable 1.7.0-2 all
