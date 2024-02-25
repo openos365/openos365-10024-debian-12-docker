@@ -175,6 +175,7 @@ cd /etc/skel
 
 mkdir actions-runner
 cd actions-runner
+# curl -o actions-runner-linux-x64-2.313.0.tar.gz -L https://mirror.ghproxy.com/github.com/actions/runner/releases/download/v2.313.0/actions-runner-linux-x64-2.313.0.tar.gz
 curl -o actions-runner-linux-x64-2.313.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.313.0/actions-runner-linux-x64-2.313.0.tar.gz
 tar xzf ./actions-runner-linux-x64-2.313.0.tar.gz
 rm -rf actions-runner-linux-x64-2.313.0.tar.gz
@@ -185,3 +186,6 @@ cd /opt/
 wget https://dldir1.qq.com/qqfile/qq/QQNT/852276c1/linuxqq_3.2.5-21453_amd64.deb
 apt install -y ./linuxqq_3.2.5-21453_amd64.deb
 rm -rf linuxqq_3.2.5-21453_amd64.deb
+
+curl -L --output /usr/bin/gitlab-runner https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64
+chmod +x /usr/bin/gitlab-runner
