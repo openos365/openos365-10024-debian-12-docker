@@ -26,3 +26,4 @@ sysbench --version
 systemctl enable docker
 systemctl enable ssh
 
+ls -al /boot/
