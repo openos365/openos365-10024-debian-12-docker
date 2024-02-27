@@ -2959,9 +2959,9 @@ coda/stable 2.24.2-1 amd64
 code-exploration/stable 1.87.0-1708414688 amd64
 code-exploration/stable 1.87.0-1708414215 arm64
 code-exploration/stable 1.87.0-1708413681 armhf
-code-insiders/stable 1.87.0-1708735079 amd64
-code-insiders/stable 1.87.0-1708733893 arm64
-code-insiders/stable 1.87.0-1708733836 armhf
+code-insiders/stable 1.87.0-1708959265 amd64
+code-insiders/stable 1.87.0-1708957989 arm64
+code-insiders/stable 1.87.0-1708957976 armhf
 code-saturne-bin/stable 6.0.2-2 amd64
 code-saturne-data/stable 6.0.2-2 all
 code-saturne-doc/stable 6.0.2-2 all
@@ -3103,7 +3103,7 @@ compiz/stable 2:0.8.18-5 all
 compizconfig-settings-manager/stable 2:0.8.18-3 amd64
 complexity-doc/stable 1.13-1 all
 complexity/stable 1.13-1+b1 amd64
-composer/stable 2.5.5-1 all
+composer/stable-security 2.5.5-1+deb12u1 all
 comprez/stable 2.7.3-2 all
 comptext/stable 1.0.1-6 amd64
 compton-conf-l10n/stable 0.16.0-2 all
@@ -9885,6 +9885,7 @@ gnutls-bin/stable 3.7.9-2+deb12u2 amd64
 gnutls-doc/stable 3.7.9-2+deb12u2 all
 go-bindata/stable 3.0.7+git20151023.72.a0ff256-4+b5 amd64
 go-bluetooth/stable 5.60-3+b4 amd64
+go-cowsql/stable-backports 1.22.0-2~bpo12+1 amd64
 go-dqlite/stable 1.11.5-1+b4 amd64
 go-for-it/stable 1.9.6-4 amd64
 go-git/stable 5.4.2-3+b7 amd64
@@ -10504,6 +10505,7 @@ golang-github-coreos-pkg-dev/stable 4-3 all
 golang-github-coreos-vcontext-dev/stable 0.0~git20210903.c22998b-2 all
 golang-github-corpix-uarand-dev/stable 0.1.1-2 all
 golang-github-cosiner-argv-dev/stable 0.1.0-3 all
+golang-github-cowsql-go-cowsql-dev/stable-backports 1.22.0-2~bpo12+1 all
 golang-github-cpuguy83-go-md2man-v2-dev/stable 2.0.2+ds1-1 all
 golang-github-creack-goselect-dev/stable 0.1.2-3 all
 golang-github-creack-pty-dev/stable 1.1.18-1 all
@@ -11465,6 +11467,7 @@ golang-github-opencontainers-runc-dev/stable,stable-security 1.1.5+ds1-1+deb12u1
 golang-github-opencontainers-runtime-tools-dev/stable 0.9.0+git20220423.g0105384-2 all
 golang-github-opencontainers-selinux-dev/stable 1.10.0+ds1-1 all
 golang-github-opencontainers-specs-dev/stable 1.0.2.118.g5cfc4c3-1 all
+golang-github-openfga-go-sdk-dev/stable-backports 0.3.4-1~bpo12+1 all
 golang-github-opennota-urlesc-dev/stable 0.0~git20160726.0.5bd2802-1.1 all
 golang-github-openpeedeep-xdg-dev/stable 0.2.0-3 all
 golang-github-openprinting-goipp-dev/stable 1.0.0-2 all
@@ -12121,6 +12124,7 @@ golang-robustirc-bridge-dev/stable 1.8-1 all
 golang-rsc-binaryregexp-dev/stable 0.2.0-3 all
 golang-rsc-pdf-dev/stable 0.1.0+git20180525.c47d69c-3 all
 golang-rsc-qr-dev/stable 0.0~git20161121.48b2ede-1.1 all
+golang-sigsum-sigsum-go-dev/stable-backports 0.7.2-1~bpo12+1 all
 golang-siphash-dev/stable 1.0.0-2 all
 golang-snappy-go-dev/stable 0.0.2-3 all
 golang-snowflake-dev/stable 2.5.1-1 all
@@ -18704,6 +18708,8 @@ libcoverart-dev/stable 1.0.0+git20150706-9 amd64
 libcoverart-doc/stable 1.0.0+git20150706-9 all
 libcoverart1/stable 1.0.0+git20150706-9 amd64
 libcoverartcc1v5/stable 1.0.0+git20150706-9 amd64
+libcowsql-dev/stable-backports 1.15.4-1~bpo12+1 amd64
+libcowsql0/stable-backports 1.15.4-1~bpo12+1 amd64
 libcoy-perl/stable 0.06-10 all
 libcpan-audit-perl/stable 20230309.004-1 all
 libcpan-changes-perl/stable 0.400002-3 all
@@ -20333,6 +20339,7 @@ libenet7/stable 1.3.17+ds-2 amd64
 libengine-gost-openssl1.1/stable 3.0.1-2+b1 amd64
 libengine-gost-openssl/stable 3.0.1-2+b1 amd64
 libengine-pkcs11-openssl/stable 0.4.12-0.1 amd64
+libengine-tpm2-tss-openssl/stable-backports 1.2.0-2~bpo12+1 amd64
 libenki-dev/stable 1:1.6.99-2+b6 amd64
 libenki2/stable 1:1.6.99-2+b6 amd64
 libenum-perl/stable 1.12-2 all
@@ -41864,9 +41871,11 @@ linux-base/stable 4.9 all
 linux-compiler-gcc-12-x86/stable 6.1.76-1 amd64
 linux-config-6.1/stable 6.1.76-1 amd64
 linux-config-6.5/stable-backports 6.5.10-1~bpo12+1 amd64
+linux-config-6.6/stable-backports 6.6.13-1~bpo12+1 amd64
 linux-cpupower/stable 6.1.76-1 amd64
 linux-doc-6.1/stable 6.1.76-1 all
 linux-doc-6.5/stable-backports 6.5.10-1~bpo12+1 all
+linux-doc-6.6/stable-backports 6.6.13-1~bpo12+1 all
 linux-doc/stable 6.1.76-1 all
 linux-headers-6.1.0-11-amd64/stable-security 6.1.38-4 amd64
 linux-headers-6.1.0-11-cloud-amd64/stable-security 6.1.38-4 amd64
@@ -41901,6 +41910,11 @@ linux-headers-6.1.0-18-rt-amd64/stable 6.1.76-1 amd64
 linux-headers-6.5.0-0.deb12.4-amd64/stable-backports 6.5.10-1~bpo12+1 amd64
 linux-headers-6.5.0-0.deb12.4-cloud-amd64/stable-backports 6.5.10-1~bpo12+1 amd64
 linux-headers-6.5.0-0.deb12.4-common/stable-backports 6.5.10-1~bpo12+1 all
+linux-headers-6.6.13+bpo-amd64/stable-backports 6.6.13-1~bpo12+1 amd64
+linux-headers-6.6.13+bpo-cloud-amd64/stable-backports 6.6.13-1~bpo12+1 amd64
+linux-headers-6.6.13+bpo-common-rt/stable-backports 6.6.13-1~bpo12+1 all
+linux-headers-6.6.13+bpo-common/stable-backports 6.6.13-1~bpo12+1 all
+linux-headers-6.6.13+bpo-rt-amd64/stable-backports 6.6.13-1~bpo12+1 amd64
 linux-headers-amd64/stable 6.1.76-1 amd64
 linux-headers-cloud-amd64/stable 6.1.76-1 amd64
 linux-headers-rt-amd64/stable 6.1.76-1 amd64
@@ -41967,6 +41981,12 @@ linux-image-6.5.0-0.deb12.4-amd64/stable-backports 6.5.10-1~bpo12+1 amd64
 linux-image-6.5.0-0.deb12.4-cloud-amd64-dbg/stable-backports 6.5.10-1~bpo12+1 amd64
 linux-image-6.5.0-0.deb12.4-cloud-amd64-unsigned/stable-backports 6.5.10-1~bpo12+1 amd64
 linux-image-6.5.0-0.deb12.4-cloud-amd64/stable-backports 6.5.10-1~bpo12+1 amd64
+linux-image-6.6.13+bpo-amd64-dbg/stable-backports 6.6.13-1~bpo12+1 amd64
+linux-image-6.6.13+bpo-amd64-unsigned/stable-backports 6.6.13-1~bpo12+1 amd64
+linux-image-6.6.13+bpo-cloud-amd64-dbg/stable-backports 6.6.13-1~bpo12+1 amd64
+linux-image-6.6.13+bpo-cloud-amd64-unsigned/stable-backports 6.6.13-1~bpo12+1 amd64
+linux-image-6.6.13+bpo-rt-amd64-dbg/stable-backports 6.6.13-1~bpo12+1 amd64
+linux-image-6.6.13+bpo-rt-amd64-unsigned/stable-backports 6.6.13-1~bpo12+1 amd64
 linux-image-amd64-dbg/stable 6.1.76-1 amd64
 linux-image-amd64-signed-template/stable 6.1.76-1 amd64
 linux-image-amd64/stable 6.1.76-1 amd64
@@ -41976,6 +41996,7 @@ linux-image-rt-amd64-dbg/stable 6.1.76-1 amd64
 linux-image-rt-amd64/stable 6.1.76-1 amd64
 linux-kbuild-6.1/stable 6.1.76-1 amd64
 linux-kbuild-6.5.0-0.deb12.4/stable-backports 6.5.10-1~bpo12+1 amd64
+linux-kbuild-6.6.13+bpo/stable-backports 6.6.13-1~bpo12+1 amd64
 linux-libc-dev-alpha-cross/stable 6.1.4-1cross1 all
 linux-libc-dev-amd64-cross/stable 6.1.4-1cross1 all
 linux-libc-dev-arc-cross/stable 6.1.4-1cross1 all
@@ -42010,6 +42031,7 @@ linux-perf/stable 6.1.76-1 amd64
 linux-show-player/stable 0.5.3-1 all
 linux-source-6.1/stable 6.1.76-1 all
 linux-source-6.5/stable-backports 6.5.10-1~bpo12+1 all
+linux-source-6.6/stable-backports 6.6.13-1~bpo12+1 all
 linux-source/stable 6.1.76-1 all
 linux-support-6.1.0-11/stable-security 6.1.38-4 all
 linux-support-6.1.0-12/stable-security 6.1.52-1 all
@@ -42018,6 +42040,7 @@ linux-support-6.1.0-16/stable-updates 6.1.67-1 all
 linux-support-6.1.0-17/stable-security 6.1.69-1 all
 linux-support-6.1.0-18/stable 6.1.76-1 all
 linux-support-6.5.0-0.deb12.4/stable-backports 6.5.10-1~bpo12+1 all
+linux-support-6.6.13+bpo/stable-backports 6.6.13-1~bpo12+1 all
 linux-user-repository/now 0.1.3 amd64 [installed,local]
 linuxcnc-doc-de/stable 2.9.0~pre1+git20230208.f1270d6ed7-1 all
 linuxcnc-doc-en/stable 2.9.0~pre1+git20230208.f1270d6ed7-1 all
@@ -50149,6 +50172,7 @@ python-hpilo-doc/stable 4.4.3-2 all
 python-humanfriendly-doc/stable 10.0-3 all
 python-hypothesis-doc/stable 6.67.1-1 all
 python-icalendar-doc/stable 4.0.3-5 all
+python-igraph-doc/stable-backports 0.11.4+ds-1~bpo12+1 all
 python-ilorest-doc/stable 3.6.0.0+ds-1 all
 python-imageio-doc/stable 2.4.1-5 all
 python-imexam-doc/stable 0.9.1-4 all
@@ -59756,6 +59780,7 @@ sigrok-firmware-fx2lafw/stable 0.1.7-1 all
 sigrok/stable 0.3 all
 sigscheme-runtime/stable 0.9.1-2 all
 sigscheme/stable 0.9.1-2 amd64
+sigsum-go/stable-backports 0.7.2-1~bpo12+1 amd64
 sigviewer/stable 0.6.4-3 amd64
 silentjack/stable 0.3-2+b2 amd64
 silkaj/stable 0.11.0-2 all
@@ -61860,6 +61885,7 @@ tio/stable 2.5-1 amd64
 tipa-doc/stable 2:1.3-21 all
 tipa/stable 2:1.3-21 all
 tipp10/stable 3.3.0-1 amd64
+tippecanoe/stable-backports 2.45.0-1~bpo12+1 amd64
 tiptop/stable 2.3.1-5 amd64
 tircd/stable 0.30-4.1 all
 tirex-example-map/stable 0.7.0-3 all
@@ -62030,6 +62056,8 @@ tpm2-abrmd/stable 3.0.0-1 amd64
 tpm2-initramfs-tool/stable 0.2.2-2 amd64
 tpm2-openssl/stable 1.1.1-1 amd64
 tpm2-tools/stable 5.4-1 amd64
+tpm2-tss-engine-dev/stable-backports 1.2.0-2~bpo12+1 all
+tpm2-tss-engine-tools/stable-backports 1.2.0-2~bpo12+1 amd64
 tpp/stable 1.3.1-8 all
 tqftpserv/stable 1.0-4 amd64
 trabucco/stable 1.3-1 amd64
