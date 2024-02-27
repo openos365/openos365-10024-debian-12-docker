@@ -1554,10 +1554,6 @@ lightdm-gtk-greeter
 light-locker
 linux-base
 linux-compiler-gcc-12-x86
-linux-headers-6.1.0-15-amd64
-linux-headers-6.1.0-15-common
-linux-image-6.1.0-15-amd64
-linux-image-6.1.0-16-amd64
 linux-image-amd64
 linux-kbuild-6.1
 linux-libc-dev
