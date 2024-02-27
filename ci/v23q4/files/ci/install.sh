@@ -9,6 +9,7 @@ ls -al
 apt update -y
 apt upgrade -y
 
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 apt remove --purge -y $(dpkg -l | grep linux-image | awk '{print $2}')
 dpkg -l | grep linux-image | awk '{print $2}'
