@@ -9,6 +9,7 @@ ls -al
 apt update -y
 apt upgrade -y
 
+which calamares
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 # apt remove --purge -y $(dpkg -l | grep linux-image | awk '{print $2}')
@@ -18,7 +19,9 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 # apt -y install --no-install-recommends linux-image-amd64
 
 
-update_install_remove_clean v23q4 remove
+# update_install_remove_clean v23q4 remove
+
+which calamares
 
 # https://blog.csdn.net/qq_21891743/article/details/132818491
 sysbench --version
