@@ -11,11 +11,11 @@ apt upgrade -y
 
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
-apt remove --purge -y $(dpkg -l | grep linux-image | awk '{print $2}')
-dpkg -l | grep linux-image | awk '{print $2}'
-apt update -y
-apt upgrade -y
-apt -y install --no-install-recommends linux-image-amd64
+# apt remove --purge -y $(dpkg -l | grep linux-image | awk '{print $2}')
+# dpkg -l | grep linux-image | awk '{print $2}'
+# apt update -y
+# apt upgrade -y
+# apt -y install --no-install-recommends linux-image-amd64
 
 
 update_install_remove_clean v23q4 remove
