@@ -806,17 +806,6 @@ libexttextcat-data
 libextutils-depends-perl
 libfaad2
 libfakeroot
-libfcitx5config6
-libfcitx5core7
-libfcitx5-qt1
-libfcitx5-qt-data
-libfcitx5utils2
-libfcitx-config4
-libfcitx-core0
-libfcitx-gclient1
-libfcitx-qt5-1
-libfcitx-qt5-data
-libfcitx-utils0
 libfdisk1
 libfdt1
 libffi8
