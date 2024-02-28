@@ -2959,9 +2959,9 @@ coda/stable 2.24.2-1 amd64
 code-exploration/stable 1.87.0-1708414688 amd64
 code-exploration/stable 1.87.0-1708414215 arm64
 code-exploration/stable 1.87.0-1708413681 armhf
-code-insiders/stable 1.87.0-1708959265 amd64
-code-insiders/stable 1.87.0-1708957989 arm64
-code-insiders/stable 1.87.0-1708957976 armhf
+code-insiders/stable 1.87.0-1709031854 amd64
+code-insiders/stable 1.87.0-1709030629 arm64
+code-insiders/stable 1.87.0-1709030615 armhf
 code-saturne-bin/stable 6.0.2-2 amd64
 code-saturne-data/stable 6.0.2-2 all
 code-saturne-doc/stable 6.0.2-2 all
