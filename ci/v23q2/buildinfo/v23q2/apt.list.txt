@@ -2476,17 +2476,17 @@ chromhmm/stable 1.24+dfsg-1 all
 chromimpute/stable 1.0.3+dfsg-4 all
 chromium-bsu-data/stable 0.9.16.1-3 all
 chromium-bsu/stable 0.9.16.1-3 amd64
-chromium-common/stable-security,now 122.0.6261.57-1~deb12u1 amd64 [installed,automatic]
-chromium-driver/stable-security,now 122.0.6261.57-1~deb12u1 amd64 [installed,automatic]
-chromium-l10n/stable-security 122.0.6261.57-1~deb12u1 all
+chromium-common/stable-security,now 122.0.6261.94-1~deb12u1 amd64 [installed,automatic]
+chromium-driver/stable-security,now 122.0.6261.94-1~deb12u1 amd64 [installed,automatic]
+chromium-l10n/stable-security 122.0.6261.94-1~deb12u1 all
 chromium-lwn4chrome/stable 1.0-3 all
-chromium-sandbox/stable-security,now 122.0.6261.57-1~deb12u1 amd64 [installed,automatic]
-chromium-shell/stable-security 122.0.6261.57-1~deb12u1 amd64
+chromium-sandbox/stable-security,now 122.0.6261.94-1~deb12u1 amd64 [installed,automatic]
+chromium-shell/stable-security 122.0.6261.94-1~deb12u1 amd64
 chromium-tt-rss-notifier/stable 0.5.2-2.1 all
-chromium/stable-security,now 122.0.6261.57-1~deb12u1 amd64 [installed,automatic]
+chromium/stable-security,now 122.0.6261.94-1~deb12u1 amd64 [installed,automatic]
 chromono/stable 1.1.1-1.1+b1 amd64
 chronicle/stable 4.6-2.1 all
-chronograf/unknown 1.10.2-1 amd64
+chronograf/unknown 1.10.3-1 amd64
 chrony/stable 4.3-2+deb12u1 amd64
 chrootuid/stable 1.3-6.1 amd64
 chrpath/stable 0.16-2+b1 amd64
@@ -2959,19 +2959,19 @@ coda/stable 2.24.2-1 amd64
 code-exploration/stable 1.87.0-1708414688 amd64
 code-exploration/stable 1.87.0-1708414215 arm64
 code-exploration/stable 1.87.0-1708413681 armhf
-code-insiders/stable 1.87.0-1709078513 amd64
-code-insiders/stable 1.87.0-1709077069 arm64
-code-insiders/stable 1.87.0-1709077086 armhf
+code-insiders/stable 1.88.0-1709186907 amd64
+code-insiders/stable 1.88.0-1709186820 arm64
+code-insiders/stable 1.88.0-1709186278 armhf
 code-saturne-bin/stable 6.0.2-2 amd64
 code-saturne-data/stable 6.0.2-2 all
 code-saturne-doc/stable 6.0.2-2 all
 code-saturne-include/stable 6.0.2-2 amd64
 code-saturne/stable 6.0.2-2 amd64
-code-server/now 4.21.1 amd64 [installed,local]
+code-server/now 4.21.2 amd64 [installed,local]
 code2html/stable 0.9.1-4.2 all
-code/stable,now 1.86.2-1707854558 amd64 [installed]
-code/stable 1.86.2-1707853305 arm64
-code/stable 1.86.2-1707853339 armhf
+code/stable,now 1.87.0-1709078641 amd64 [installed]
+code/stable 1.87.0-1709077383 arm64
+code/stable 1.87.0-1709077349 armhf
 codeblocks-common/stable 20.03+svn13046-0.1 all
 codeblocks-contrib/stable 20.03+svn13046-0.1+b2 amd64
 codeblocks-dev/stable 20.03+svn13046-0.1+b2 amd64
@@ -14409,7 +14409,7 @@ kannel-extras/stable 1.4.5-12 amd64
 kannel/stable 1.4.5-12 amd64
 kanshi/stable 1.3.1-1 amd64
 kanyremote/stable 8.1-1.1 all
-kapacitor/unknown 1.7.1-1 amd64
+kapacitor/unknown 1.7.2-1 amd64
 kapidox/stable 5.103.0-1 all
 kapman/stable 4:22.12.3-1 amd64
 kappanhang/stable 1.3-2+b5 amd64
