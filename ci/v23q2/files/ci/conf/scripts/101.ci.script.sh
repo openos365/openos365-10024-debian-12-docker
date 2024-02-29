@@ -202,6 +202,11 @@ apt-get update -y
 apt-get install influxdb2 -y
 apt-get install telegraf -y
 
+rm -rf /etc/apt/sources.list.d/influxdata.list
+
+apt update -y
+apt upgrade -y
+
 systemctl enable influxdb2
 systemctl enable telegraf
 
