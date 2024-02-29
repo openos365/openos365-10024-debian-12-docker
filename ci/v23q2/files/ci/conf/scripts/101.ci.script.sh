@@ -204,3 +204,8 @@ apt-get install telegraf -y
 
 systemctl enable influxdb2
 systemctl enable telegraf
+
+curl https://dl.gitea.com/act_runner/nightly/act_runner-nightly-linux-amd64 -o /usr/bin/act_runner
+chmod +x /usr/bin/act_runner
+
+
