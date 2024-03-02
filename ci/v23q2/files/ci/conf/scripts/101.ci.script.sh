@@ -161,6 +161,7 @@ echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft
 rm -f packages.microsoft.gpg
 apt update -y
 apt install -y code 
+rm -rf /etc/apt/sources.list.d/vscode.list
 
 
 pip3 install git+https://github.com/tomquirk/linkedin-api.git --break-system-packages
