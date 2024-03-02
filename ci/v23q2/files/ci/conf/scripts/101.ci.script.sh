@@ -164,7 +164,7 @@ apt install -y code
 rm -rf /etc/apt/sources.list.d/vscode.list
 
 
-pip3 install git+https://github.com/tomquirk/linkedin-api.git --break-system-packages
+# pip3 install git+https://github.com/tomquirk/linkedin-api.git --break-system-packages
 
 cd /opt/
 wget https://gitea.elara.ws/lure/lure/releases/download/v0.1.3/linux-user-repository-0.1.3-linux-x86_64.deb
