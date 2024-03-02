@@ -2955,12 +2955,6 @@ coco-doc/stable 20060919.0-1 all
 coco-java/stable 20110419-3.3 all
 cod-tools/stable 3.7.0+dfsg-1+b3 amd64
 coda/stable 2.24.2-1 amd64
-code-exploration/stable 1.87.0-1708414688 amd64
-code-exploration/stable 1.87.0-1708414215 arm64
-code-exploration/stable 1.87.0-1708413681 armhf
-code-insiders/stable 1.88.0-1709186907 amd64
-code-insiders/stable 1.88.0-1709186820 arm64
-code-insiders/stable 1.88.0-1709186278 armhf
 code-saturne-bin/stable 6.0.2-2 amd64
 code-saturne-data/stable 6.0.2-2 all
 code-saturne-doc/stable 6.0.2-2 all
@@ -2968,9 +2962,7 @@ code-saturne-include/stable 6.0.2-2 amd64
 code-saturne/stable 6.0.2-2 amd64
 code-server/now 4.21.2 amd64 [installed,local]
 code2html/stable 0.9.1-4.2 all
-code/stable,now 1.87.0-1709078641 amd64 [installed]
-code/stable 1.87.0-1709077383 arm64
-code/stable 1.87.0-1709077349 armhf
+code/now 1.87.0-1709078641 amd64 [installed,local]
 codeblocks-common/stable 20.03+svn13046-0.1 all
 codeblocks-contrib/stable 20.03+svn13046-0.1+b2 amd64
 codeblocks-dev/stable 20.03+svn13046-0.1+b2 amd64
@@ -10150,18 +10142,18 @@ golang-1.19-doc/stable,now 1.19.8-2 all [installed,automatic]
 golang-1.19-go/stable,now 1.19.8-2 amd64 [installed,automatic]
 golang-1.19-src/stable,now 1.19.8-2 all [installed,automatic]
 golang-1.19/stable,now 1.19.8-2 all [installed,automatic]
-golang-1.20-doc/stable-backports 1.20.14-1~bpo12+1 all
-golang-1.20-go/stable-backports 1.20.14-1~bpo12+1 amd64
-golang-1.20-src/stable-backports 1.20.14-1~bpo12+1 all
-golang-1.20/stable-backports 1.20.14-1~bpo12+1 all
-golang-1.21-doc/stable-backports 1.21.7-1~bpo12+1 all
-golang-1.21-go/stable-backports 1.21.7-1~bpo12+1 amd64
-golang-1.21-src/stable-backports 1.21.7-1~bpo12+1 all
-golang-1.21/stable-backports 1.21.7-1~bpo12+1 all
-golang-1.22-doc/stable-backports 1.22.0-1~bpo12+1 all
-golang-1.22-go/stable-backports 1.22.0-1~bpo12+1 amd64
-golang-1.22-src/stable-backports 1.22.0-1~bpo12+1 all
-golang-1.22/stable-backports 1.22.0-1~bpo12+1 all
+golang-1.20-doc/stable-backports 1.20.14-2~bpo12+1 all
+golang-1.20-go/stable-backports 1.20.14-2~bpo12+1 amd64
+golang-1.20-src/stable-backports 1.20.14-2~bpo12+1 all
+golang-1.20/stable-backports 1.20.14-2~bpo12+1 all
+golang-1.21-doc/stable-backports 1.21.7-2~bpo12+1 all
+golang-1.21-go/stable-backports 1.21.7-2~bpo12+1 amd64
+golang-1.21-src/stable-backports 1.21.7-2~bpo12+1 all
+golang-1.21/stable-backports 1.21.7-2~bpo12+1 all
+golang-1.22-doc/stable-backports 1.22.0-2~bpo12+1 all
+golang-1.22-go/stable-backports 1.22.0-2~bpo12+1 amd64
+golang-1.22-src/stable-backports 1.22.0-2~bpo12+1 all
+golang-1.22/stable-backports 1.22.0-2~bpo12+1 all
 golang-android-soong-dev/stable 0.0~git20201014.17e97d9-4 all
 golang-any/stable 2:1.19~1 amd64
 golang-ariga-atlas-dev/stable 0.7.2-2 all
@@ -10410,7 +10402,7 @@ golang-github-cenk-hub-dev/stable 1.0.0+git20160321.17.b864404b5f99-1.1 all
 golang-github-cenk-rpc2-dev/stable 0.0~git20160427.0.7ab76d2e88c7-1.1 all
 golang-github-cenkalti-backoff-dev/stable 4.1.3-1 all
 golang-github-cenkalti-hub-dev/stable-backports 1.0.2-2~bpo12+1 all
-golang-github-cenkalti-rpc2-dev/stable-backports 1.0.1-1~bpo12+1 all
+golang-github-cenkalti-rpc2-dev/stable-backports 1.0.2-1~bpo12+1 all
 golang-github-cention-sany-utf7-dev/stable 0.0~git20170124.26cad61-2 all
 golang-github-centrifugal-centrifuge-dev/stable 0.15.0+git20210306.f435ba2-2 all
 golang-github-centrifugal-protocol-dev/stable 0.3.6-3 all
@@ -11466,7 +11458,7 @@ golang-github-opencontainers-runc-dev/stable,stable-security 1.1.5+ds1-1+deb12u1
 golang-github-opencontainers-runtime-tools-dev/stable 0.9.0+git20220423.g0105384-2 all
 golang-github-opencontainers-selinux-dev/stable 1.10.0+ds1-1 all
 golang-github-opencontainers-specs-dev/stable 1.0.2.118.g5cfc4c3-1 all
-golang-github-openfga-go-sdk-dev/stable-backports 0.3.4-1~bpo12+1 all
+golang-github-openfga-go-sdk-dev/stable-backports 0.3.5-1~bpo12+1 all
 golang-github-opennota-urlesc-dev/stable 0.0~git20160726.0.5bd2802-1.1 all
 golang-github-openpeedeep-xdg-dev/stable 0.2.0-3 all
 golang-github-openprinting-goipp-dev/stable 1.0.0-2 all
@@ -34426,8 +34418,8 @@ libradosstriper1/stable 16.2.11+ds-2 amd64
 libradsec-dev/stable 0.0.5-5+b3 amd64
 libradsec0/stable 0.0.5-5+b3 amd64
 libraft-dev/stable 0.15.0-1 amd64
-libraft-tools/stable-backports 0.21.0-1~bpo12+1 amd64
-libraft0/stable-backports 0.21.0-1~bpo12+1 amd64
+libraft-tools/stable-backports 0.22.0-1~bpo12+1 amd64
+libraft0/stable-backports 0.22.0-1~bpo12+1 amd64
 libraft2/stable 0.15.0-1 amd64
 librandom-numbers-dev/stable 0.3.2-5+b1 amd64
 librandom-numbers0d/stable 0.3.2-5+b1 amd64
