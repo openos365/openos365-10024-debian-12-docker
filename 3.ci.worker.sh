@@ -19,6 +19,8 @@ env
 echo "============================================================================"
 if [ ! -z "${GITHUB_REPOSITORY}" ];then
 
+sudo sed -i 's@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g' /etc/apt/sources.list
+
 sudo df -h
 sudo rm -rf /usr/local/lib/android # will release about 10 GB if you don't need Android
 sudo rm -rf /usr/share/dotnet # will release about 20GB if you don't need .NET
@@ -41,8 +43,8 @@ sudo rm -rf "$AGENT_TOOLSDIRECTORY"
 sudo df -h
 
     # 0
-    # sudo apt update -y
-    # sudo apt upgrade -y
+    sudo apt update -y
+    sudo apt upgrade -y
     sudo apt install -y dos2unix
     cd ~
     curl -LO https://storage.googleapis.com/container-diff/latest/container-diff-linux-amd64
