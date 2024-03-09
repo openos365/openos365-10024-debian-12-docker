@@ -2476,14 +2476,14 @@ chromhmm/stable 1.24+dfsg-1 all
 chromimpute/stable 1.0.3+dfsg-4 all
 chromium-bsu-data/stable 0.9.16.1-3 all
 chromium-bsu/stable 0.9.16.1-3 amd64
-chromium-common/stable-security,now 122.0.6261.94-1~deb12u1 amd64 [installed,automatic]
-chromium-driver/stable-security,now 122.0.6261.94-1~deb12u1 amd64 [installed,automatic]
-chromium-l10n/stable-security 122.0.6261.94-1~deb12u1 all
+chromium-common/stable-security,now 122.0.6261.111-1~deb12u1 amd64 [installed,automatic]
+chromium-driver/stable-security,now 122.0.6261.111-1~deb12u1 amd64 [installed,automatic]
+chromium-l10n/stable-security 122.0.6261.111-1~deb12u1 all
 chromium-lwn4chrome/stable 1.0-3 all
-chromium-sandbox/stable-security,now 122.0.6261.94-1~deb12u1 amd64 [installed,automatic]
-chromium-shell/stable-security 122.0.6261.94-1~deb12u1 amd64
+chromium-sandbox/stable-security,now 122.0.6261.111-1~deb12u1 amd64 [installed,automatic]
+chromium-shell/stable-security 122.0.6261.111-1~deb12u1 amd64
 chromium-tt-rss-notifier/stable 0.5.2-2.1 all
-chromium/stable-security,now 122.0.6261.94-1~deb12u1 amd64 [installed,automatic]
+chromium/stable-security,now 122.0.6261.111-1~deb12u1 amd64 [installed,automatic]
 chromono/stable 1.1.1-1.1+b1 amd64
 chronicle/stable 4.6-2.1 all
 chrony/stable 4.3-2+deb12u1 amd64
@@ -2960,9 +2960,9 @@ code-saturne-data/stable 6.0.2-2 all
 code-saturne-doc/stable 6.0.2-2 all
 code-saturne-include/stable 6.0.2-2 amd64
 code-saturne/stable 6.0.2-2 amd64
-code-server/now 4.21.2 amd64 [installed,local]
+code-server/now 4.22.0 amd64 [installed,local]
 code2html/stable 0.9.1-4.2 all
-code/now 1.87.0-1709078641 amd64 [installed,local]
+code/now 1.87.1-1709685762 amd64 [installed,local]
 codeblocks-common/stable 20.03+svn13046-0.1 all
 codeblocks-contrib/stable 20.03+svn13046-0.1+b2 amd64
 codeblocks-dev/stable 20.03+svn13046-0.1+b2 amd64
@@ -60346,13 +60346,13 @@ squeekboard/stable 1.21.0-1 amd64
 squeezelite-pa/stable 1.9.9-1414+git20221121.dbe69eb-1 amd64
 squeezelite-pulseaudio/stable 1.9.9-1414+git20221121.dbe69eb-1 amd64
 squeezelite/stable 1.9.9-1414+git20221121.dbe69eb-1 amd64
-squid-cgi/stable 5.7-2 amd64
-squid-common/stable 5.7-2 all
+squid-cgi/stable-security 5.7-2+deb12u1 amd64
+squid-common/stable-security 5.7-2+deb12u1 all
 squid-langpack/stable 20220130-1 all
-squid-openssl/stable 5.7-2 amd64
-squid-purge/stable 5.7-2 amd64
-squid/stable 5.7-2 amd64
-squidclient/stable 5.7-2 amd64
+squid-openssl/stable-security 5.7-2+deb12u1 amd64
+squid-purge/stable-security 5.7-2+deb12u1 amd64
+squid/stable-security 5.7-2+deb12u1 amd64
+squidclient/stable-security 5.7-2+deb12u1 amd64
 squidguard-doc/stable 1.6.0-4 all
 squidguard/stable 1.6.0-4 amd64
 squidtaild/stable 2.1a6-6.2 all
@@ -61873,7 +61873,7 @@ tio/stable 2.5-1 amd64
 tipa-doc/stable 2:1.3-21 all
 tipa/stable 2:1.3-21 all
 tipp10/stable 3.3.0-1 amd64
-tippecanoe/stable-backports 2.45.0-1~bpo12+1 amd64
+tippecanoe/stable-backports 2.49.0-1~bpo12+1 amd64
 tiptop/stable 2.3.1-5 amd64
 tircd/stable 0.30-4.1 all
 tirex-example-map/stable 0.7.0-3 all
@@ -63957,7 +63957,7 @@ xdg-user-dirs/stable,now 0.18-1 amd64 [installed,automatic]
 xdg-utils-cxx-dev/stable 1.0.1-3.1 amd64
 xdg-utils-cxx/stable 1.0.1-3.1 amd64
 xdg-utils/stable,now 1.1.3-4.1 all [installed,automatic]
-xdiskusage/stable-backports 1.60-3~bpo12+1 amd64
+xdiskusage/stable-backports 1.60-4~bpo12+1 amd64
 xdm/stable 1:1.1.11-3+b2 amd64
 xdms/stable 1.3.2-7 amd64
 xdo/stable 0.5.7-1+b2 amd64
@@ -64186,8 +64186,8 @@ xlunzip/stable 0.7-7 amd64
 xmabacus/stable 8.5.1-1 amd64
 xmacro/stable 0.3pre-20000911-8 amd64
 xmahjongg/stable 3.7-5 amd64
-xmake-data/stable-backports 2.8.6+ds-3~bpo12+1 all
-xmake/stable-backports 2.8.6+ds-3~bpo12+1 amd64
+xmake-data/stable-backports 2.8.7+ds-1~bpo12+1 all
+xmake/stable-backports 2.8.7+ds-1~bpo12+1 amd64
 xmakemol-gl/stable 5.16-10+b1 amd64
 xmakemol/stable 5.16-10+b1 amd64
 xmaxima/stable 5.46.0-11 amd64
@@ -64503,8 +64503,8 @@ yapps2/stable 2.2.1-3.1 all
 yapra/stable 0.1.2-7.2 all
 yara-doc/stable 4.2.3-4 all
 yara/stable 4.2.3-4 amd64
-yard-doc/stable 0.9.28-2 all
-yard/stable 0.9.28-2 all
+yard-doc/stable-security 0.9.28-2+deb12u2 all
+yard/stable-security 0.9.28-2+deb12u2 all
 yaret/stable 2.1.0-5.2 all
 yarnpkg/stable 1.22.19+~cs24.27.18-2+deb12u1 all
 yarsync/stable 0.1.1+deb-2 all
