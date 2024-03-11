@@ -41,7 +41,7 @@ function my_pkg_install_remove()
 	while read pkg
 	do
  		echo $pkg
-  		apt install -y $pkg
+  		apt remove -y $pkg
 	done < packages.to.remove.txt
 }
 
@@ -49,7 +49,7 @@ function my_scripts_run()
 {
 	cd $PWD
 	cd scripts
-	for my_script in `ls | sort`
+	for my_script in `ls *.sh | sort`
     do
         if [ -f $my_script ];then
 			chmod +x $my_script
