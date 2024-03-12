@@ -40223,8 +40223,8 @@ libuutf-ocaml-dev/stable 1.0.3-1 amd64
 libuutf-ocaml-doc/stable 1.0.3-1 all
 libuutf-ocaml/stable 1.0.3-1 amd64
 libuutil3linux/stable 2.1.11-1 amd64
-libuv1-dev/stable 1.44.2-1 amd64
-libuv1/stable,now 1.44.2-1 amd64 [installed,automatic]
+libuv1-dev/stable-security 1.44.2-1+deb12u1 amd64
+libuv1/stable-security,now 1.44.2-1+deb12u1 amd64 [installed,automatic]
 libuvc-dev/stable 0.0.6-2 amd64
 libuvc-doc/stable 0.0.6-2 all
 libuvc0/stable 0.0.6-2 amd64
@@ -61381,7 +61381,7 @@ tegaki-zinnia-japanese/stable 0.3-3 all
 tegaki-zinnia-simplified-chinese/stable 0.3-3 all
 tegrarcm/stable 1.8-2 amd64
 telegnome/stable 0.3.6-4 amd64
-telegraf/now 1.29.5-1 amd64 [installed,local]
+telegraf/now 1.30.0-1 amd64 [installed,local]
 telegram-desktop/stable 4.6.5+ds-2 amd64
 telegram-send/stable 0.34-2 all
 telemetry-tempest-plugin/stable 1.7.0-2 all
