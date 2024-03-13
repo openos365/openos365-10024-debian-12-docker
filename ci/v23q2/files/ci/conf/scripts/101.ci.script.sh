@@ -214,4 +214,10 @@ systemctl enable telegraf
 curl https://dl.gitea.com/act_runner/nightly/act_runner-nightly-linux-amd64 -o /usr/bin/act_runner
 chmod +x /usr/bin/act_runner
 
+# dbschema
+cd /opt/
+wget https://dbschema.com/download/DbSchema_linux_9_5_2.deb
+apt install ./DbSchema_linux_9_5_2.deb
+rm -rf ./DbSchema_linux_9_5_2.deb
+
 
