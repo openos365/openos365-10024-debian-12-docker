@@ -2962,7 +2962,7 @@ code-saturne-include/stable 6.0.2-2 amd64
 code-saturne/stable 6.0.2-2 amd64
 code-server/now 4.22.0 amd64 [installed,local]
 code2html/stable 0.9.1-4.2 all
-code/now 1.87.1-1709685762 amd64 [installed,local]
+code/now 1.87.2-1709912201 amd64 [installed,local]
 codeblocks-common/stable 20.03+svn13046-0.1 all
 codeblocks-contrib/stable 20.03+svn13046-0.1+b2 amd64
 codeblocks-dev/stable 20.03+svn13046-0.1+b2 amd64
@@ -5520,7 +5520,7 @@ emacs-lucid/stable 1:28.2+1-15 amd64
 emacs-mozc-bin/stable 2.28.4715.102+dfsg-2.2 amd64
 emacs-mozc/stable 2.28.4715.102+dfsg-2.2 amd64
 emacs-nox/stable 1:28.2+1-15 amd64
-emacs-pgtk/stable-backports 1:29.1+1-5~bpo12+1 amd64
+emacs-pgtk/stable-backports 1:29.2+1-2~bpo12+1 amd64
 emacs-window-layout/stable 1.4-2.1 all
 emacs/stable 1:28.2+1-15 all
 emacsen-common/stable,now 3.0.5 all [installed,automatic]
