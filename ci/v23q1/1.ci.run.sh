@@ -12,7 +12,7 @@ cd $CMD_PATH
 date
 sudo apt install debootstrap -y
 distro=bookworm
-mirror=http://mirrors.ustc.edu.cn/debian/
+mirror=http://mirror.nju.edu.cn/debian/
 
 rootfsDir=chroot
 debootstrap=debootstrap
@@ -23,7 +23,7 @@ fi
 
 sudo debootstrap \
 --arch=amd64 \
---include=zsh,locales,locales-all,rsync \
+--include=zsh,locales,locales-all,rsync,xterm \
 --components=main,contrib,non-free,non-free-firmware \
 --variant=minbase \
 $distro $rootfsDir $mirror
