@@ -75,7 +75,7 @@ if [ ! -z $1 ];then
     date > /build_date.txt
     apt list --installed > apt.list.installed.txt
     apt list > apt.list.txt
-    
+    date "+%Y%m%d" > build_day.txt
 fi
 
 if [ ! -z $2 ];then
