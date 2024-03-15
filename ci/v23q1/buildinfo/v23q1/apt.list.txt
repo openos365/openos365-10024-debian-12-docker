@@ -6619,7 +6619,7 @@ fondu/stable 0.0.20060102-5 amd64
 font-manager-common/stable 0.8.8-2 amd64
 font-manager/stable 0.8.8-2 amd64
 font-viewer/stable 0.8.8-2 amd64
-fontconfig-config/stable 2.14.1-4 amd64
+fontconfig-config/stable,now 2.14.1-4 amd64 [installed]
 fontconfig/stable 2.14.1-4 amd64
 fontcustom/stable 2.0.0+ds4-5.1 all
 fontforge-common/stable 1:20230101~dfsg-1 all
@@ -6715,7 +6715,7 @@ fonts-cwtex-yen/stable 1.0-4 all
 fonts-dancingscript/stable 1.2-2 all
 fonts-dclfonts/stable 7.5.1-1 all
 fonts-ddc-uchen/stable 1.0-1.2 all
-fonts-dejavu-core/stable 2.37-6 all
+fonts-dejavu-core/stable,now 2.37-6 all [installed]
 fonts-dejavu-extra/stable 2.37-6 all
 fonts-dejavu-web/stable 2.37-6 all
 fonts-dejavu/stable 2.37-6 all
@@ -17072,7 +17072,7 @@ libbrlapi0.8/stable 6.5-7+deb12u1 amd64
 libbroker-dev/stable 1.4.0+ds1-1+b2 amd64
 libbroker2/stable 1.4.0+ds1-1+b2 amd64
 libbrotli-dev/stable 1.0.9-2+b6 amd64
-libbrotli1/stable 1.0.9-2+b6 amd64
+libbrotli1/stable,now 1.0.9-2+b6 amd64 [installed]
 libbrowser-open-perl/stable 0.04-1.1 all
 libbs2b-bin/stable 3.1.0+dfsg-7 amd64
 libbs2b-dev/stable 3.1.0+dfsg-7 amd64
@@ -17080,7 +17080,7 @@ libbs2b0/stable 3.1.0+dfsg-7 amd64
 libbsd-arc4random-perl/stable 1.50-8+b1 amd64
 libbsd-dev/stable 0.11.7-2 amd64
 libbsd-resource-perl/stable 1.2911-2+b1 amd64
-libbsd0/stable 0.11.7-2 amd64
+libbsd0/stable,now 0.11.7-2 amd64 [installed]
 libbsf-java-doc/stable 1:2.4.0-8 all
 libbsf-java/stable 1:2.4.0-8 all
 libbsh-java/stable 2.0b4-20 all
@@ -20428,7 +20428,7 @@ libexodusii5/stable 6.02.dfsg.1-10+b1 amd64
 libexpat-ocaml-dev/stable 1.1.0-1+b2 amd64
 libexpat-ocaml/stable 1.1.0-1+b2 amd64
 libexpat1-dev/stable 2.5.0-1 amd64
-libexpat1/stable 2.5.0-1 amd64
+libexpat1/stable,now 2.5.0-1 amd64 [installed]
 libexpect-ocaml-dev/stable 0.0.6-2+b5 amd64
 libexpect-ocaml/stable 0.0.6-2+b5 amd64
 libexpect-perl/stable 1.35-2 all
@@ -20981,7 +20981,7 @@ libfontchooser-java/stable 1.0.0-3 all
 libfontconfig-dev/stable 2.14.1-4 amd64
 libfontconfig-doc/stable 2.14.1-4 all
 libfontconfig1-dev/stable 2.14.1-4 amd64
-libfontconfig1/stable 2.14.1-4 amd64
+libfontconfig1/stable,now 2.14.1-4 amd64 [installed]
 libfontembed-dev/stable 1.28.17-3 amd64
 libfontembed1/stable 1.28.17-3 amd64
 libfontenc-dev/stable 1:1.1.4-1 amd64
@@ -21094,7 +21094,7 @@ libfreesrp-dev/stable 0.3.0-2 amd64
 libfreesrp0/stable 0.3.0-2 amd64
 libfreetype-dev/stable 2.12.1+dfsg-5 amd64
 libfreetype6-dev/stable 2.12.1+dfsg-5 amd64
-libfreetype6/stable 2.12.1+dfsg-5 amd64
+libfreetype6/stable,now 2.12.1+dfsg-5 amd64 [installed]
 libfreexl-dev/stable 1.0.6-2 amd64
 libfreexl1/stable 1.0.6-2 amd64
 libfreezethaw-perl/stable 0.5001-3 all
@@ -26639,7 +26639,7 @@ libicapapi5/stable 1:0.5.10-4 amd64
 libicb-utils-java/stable 2.0.1+git20161002.afee1d9-5 all
 libice-dev/stable 2:1.0.10-1 amd64
 libice-doc/stable 2:1.0.10-1 all
-libice6/stable 2:1.0.10-1 amd64
+libice6/stable,now 2:1.0.10-1 amd64 [installed]
 libicecc-dev/stable 1.4-1 amd64
 libiceoryx-binding-c-dev/stable 2.0.3+dfsg-1 amd64
 libiceoryx-binding-c2/stable 2.0.3+dfsg-1 amd64
@@ -33261,7 +33261,7 @@ libpng-dev/stable 1.6.39-2 amd64
 libpng-sixlegs-java-doc/stable 2.0-3 all
 libpng-sixlegs-java/stable 2.0-3 all
 libpng-tools/stable 1.6.39-2 amd64
-libpng16-16/stable 1.6.39-2 amd64
+libpng16-16/stable,now 1.6.39-2 amd64 [installed]
 libpnglite-dev/stable 0.1.17-3 amd64
 libpnglite0/stable 0.1.17-3 amd64
 libpocketsphinx-dev/stable 0.8+5prealpha+1-15 amd64
@@ -37654,7 +37654,7 @@ libslvs1-dev/stable 3.1+ds1-3 amd64
 libslvs1/stable 3.1+ds1-3 amd64
 libsm-dev/stable 2:1.2.3-1 amd64
 libsm-doc/stable 2:1.2.3-1 all
-libsm6/stable 2:1.2.3-1 amd64
+libsm6/stable,now 2:1.2.3-1 amd64 [installed]
 libsmali-java/stable 2.5.2.git2771eae-4 all
 libsmart-comments-perl/stable 1.06-3 all
 libsmartcols-dev/stable 2.38.1-5+b1 amd64
@@ -40010,7 +40010,7 @@ libustr-1.0-1/stable 1.0.4-6.1 amd64
 libustr-dev/stable 1.0.4-6.1 amd64
 libustr-doc/stable 1.0.4-6.1 all
 libutempter-dev/stable 1.2.1-3 amd64
-libutempter0/stable 1.2.1-3 amd64
+libutempter0/stable,now 1.2.1-3 amd64 [installed]
 libutf8-all-perl/stable 0.024-3 all
 libutf8-locale-dev/stable 1.0.0-2 amd64
 libutf8-locale0/stable 1.0.0-2 amd64
@@ -40672,8 +40672,8 @@ libwxsvg-dev/stable 2:1.5.24+dfsg-1+b2 amd64
 libwxsvg-tools/stable 2:1.5.24+dfsg-1+b2 amd64
 libwxsvg3/stable 2:1.5.24+dfsg-1+b2 amd64
 libwyhash-dev/stable 0~2.gbp234f0c6-1 amd64
-libx11-6/stable 2:1.8.4-2+deb12u2 amd64
-libx11-data/stable 2:1.8.4-2+deb12u2 all
+libx11-6/stable,now 2:1.8.4-2+deb12u2 amd64 [installed]
+libx11-data/stable,now 2:1.8.4-2+deb12u2 all [installed]
 libx11-dev/stable 2:1.8.4-2+deb12u2 amd64
 libx11-doc/stable 2:1.8.4-2+deb12u2 all
 libx11-freedesktop-desktopentry-perl/stable 0.04-5 all
@@ -40806,13 +40806,13 @@ libxapp1/stable 2.4.2-3 amd64
 libxatracker-dev/stable 22.3.6-1+deb12u1 amd64
 libxatracker2/stable 22.3.6-1+deb12u1 amd64
 libxau-dev/stable 1:1.0.9-1 amd64
-libxau6/stable 1:1.0.9-1 amd64
+libxau6/stable,now 1:1.0.9-1 amd64 [installed]
 libxaw-doc/stable 2:1.0.14-1 all
 libxaw3dxft6/stable 2.9.1.4-4+b1 amd64
 libxaw3dxft8-dev/stable 1.6.2h-1 amd64
 libxaw3dxft8/stable 1.6.2h-1 amd64
 libxaw7-dev/stable 2:1.0.14-1 amd64
-libxaw7/stable 2:1.0.14-1 amd64
+libxaw7/stable,now 2:1.0.14-1 amd64 [installed]
 libxbae-dev/stable 4.60.4-9 amd64
 libxbae4m/stable 4.60.4-9 amd64
 libxbase64-1/stable 3.1.2-14 amd64
@@ -40892,7 +40892,7 @@ libxcb-xv0/stable 1.15-1 amd64
 libxcb-xvmc0-dev/stable 1.15-1 amd64
 libxcb-xvmc0/stable 1.15-1 amd64
 libxcb1-dev/stable 1.15-1 amd64
-libxcb1/stable 1.15-1 amd64
+libxcb1/stable,now 1.15-1 amd64 [installed]
 libxcomp-dev/stable 2:3.5.99.26-5+deb12u1 amd64
 libxcomp3/stable 2:3.5.99.26-5+deb12u1 amd64
 libxcomposite-dev/stable 1:0.4.5-1 amd64
@@ -40919,7 +40919,7 @@ libxdgutilsbasedir1.0.1/stable 1.0.1-3.1 amd64
 libxdgutilsdesktopentry1.0.1/stable 1.0.1-3.1 amd64
 libxdmcp-dev/stable 1:1.1.2-3 amd64
 libxdmcp6-dbg/stable 1:1.1.2-3 amd64
-libxdmcp6/stable 1:1.1.2-3 amd64
+libxdmcp6/stable,now 1:1.1.2-3 amd64 [installed]
 libxdmf-dev/stable 3.0+git20190531-11+b3 amd64
 libxdmf3/stable 3.0+git20190531-11+b3 amd64
 libxdo-dev/stable 1:3.20160805.1-5 amd64
@@ -40954,7 +40954,7 @@ libxeus-python0/stable 0.14.3+~0.5.0-3 amd64
 libxeus6/stable 2.4.1-1 amd64
 libxext-dev/stable 2:1.3.4-1+b1 amd64
 libxext-doc/stable 2:1.3.4-1 all
-libxext6/stable 2:1.3.4-1+b1 amd64
+libxext6/stable,now 2:1.3.4-1+b1 amd64 [installed]
 libxfce4panel-2.0-4/stable 4.18.2-1 amd64
 libxfce4panel-2.0-dev/stable 4.18.2-1 amd64
 libxfce4ui-2-0/stable 4.18.2-2 amd64
@@ -40973,7 +40973,7 @@ libxfixes3/stable 1:6.0.0-2 amd64
 libxfont-dev/stable 1:2.0.6-1 amd64
 libxfont2/stable 1:2.0.6-1 amd64
 libxft-dev/stable 2.3.6-1 amd64
-libxft2/stable 2.3.6-1 amd64
+libxft2/stable,now 2.3.6-1 amd64 [installed]
 libxgboost-dev/stable 1.7.4-1 amd64
 libxgboost-predictor-java/stable 0.3.1+dfsg-2 all
 libxgboost0/stable 1.7.4-1 amd64
@@ -40998,7 +40998,7 @@ libxineliboutput-fbfe/stable 2.2.0+git20211212-2.2 amd64
 libxineliboutput-sxfe/stable 2.2.0+git20211212-2.2 amd64
 libxineliboutput-wlfe/stable 2.2.0+git20211212-2.2 amd64
 libxinerama-dev/stable 2:1.1.4-3 amd64
-libxinerama1/stable 2:1.1.4-3 amd64
+libxinerama1/stable,now 2:1.1.4-3 amd64 [installed]
 libxir-dev/stable 2.5-1+b1 amd64
 libxir-utils/stable 2.5-1+b1 amd64
 libxir2/stable 2.5-1+b1 amd64
@@ -41204,7 +41204,7 @@ libxmpi4-dev/stable 2.2.3b8-14+b1 amd64
 libxmpi4/stable 2.2.3b8-14+b1 amd64
 libxmu-dev/stable 2:1.1.3-3 amd64
 libxmu-headers/stable 2:1.1.3-3 all
-libxmu6/stable 2:1.1.3-3 amd64
+libxmu6/stable,now 2:1.1.3-3 amd64 [installed]
 libxmuu-dev/stable 2:1.1.3-3 amd64
 libxmuu1/stable 2:1.1.3-3 amd64
 libxnee-dev/stable 3.19-9 amd64
@@ -41224,7 +41224,7 @@ libxpa1/stable 2.1.20-1 amd64
 libxplc0.3.13-dev/stable 0.3.13-12 amd64
 libxplc0.3.13/stable 0.3.13-12 amd64
 libxpm-dev/stable 1:3.5.12-1.1+deb12u1 amd64
-libxpm4/stable 1:3.5.12-1.1+deb12u1 amd64
+libxpm4/stable,now 1:3.5.12-1.1+deb12u1 amd64 [installed]
 libxpp2-java/stable 2.1.10-8 all
 libxpp3-java/stable 1.1.4c-3 all
 libxpresent-dev/stable 1.0.0-2+b10 amd64
@@ -41253,7 +41253,7 @@ libxrdssishmap2/stable 5.5.3-1 amd64
 libxrdutils3/stable 5.5.3-1 amd64
 libxrdxml3/stable 5.5.3-1 amd64
 libxrender-dev/stable 1:0.9.10-1.1 amd64
-libxrender1/stable 1:0.9.10-1.1 amd64
+libxrender1/stable,now 1:0.9.10-1.1 amd64 [installed]
 libxres-dev/stable 2:1.2.1-1 amd64
 libxres1/stable 2:1.2.1-1 amd64
 libxrl-dev/stable 4.0.0+dfsg1-3 amd64
@@ -41291,7 +41291,7 @@ libxstring-perl/stable 0.005-2+b1 amd64
 libxstrp4-camlp4-dev/stable 1.8.2-5 all
 libxt-dev/stable 1:1.2.1-1.1 amd64
 libxt-doc/stable 1:1.2.1-1.1 all
-libxt6/stable 1:1.2.1-1.1 amd64
+libxt6/stable,now 1:1.2.1-1.1 amd64 [installed]
 libxtables-dev/stable 1.8.9-2 amd64
 libxtables12/stable 1.8.9-2 amd64
 libxtb-dev/stable 6.5.1-3 amd64
@@ -63455,7 +63455,7 @@ wzip/stable 1.1.6 amd64
 x-face-el/stable 1.3.6.24-19 all
 x-tile/stable 3.3-3 all
 x11-apps/stable 7.7+9 amd64
-x11-common/stable 1:7.7+23 all
+x11-common/stable,now 1:7.7+23 all [installed]
 x11-session-utils/stable 7.7+5 amd64
 x11-touchscreen-calibrator/stable 0.2-2+b1 amd64
 x11-utils/stable 7.7+5 amd64
@@ -63553,7 +63553,7 @@ xbattbar/stable 1.4.9-2 amd64
 xbill/stable 2.1-9 amd64
 xbindkeys-config/stable 0.1.3-2.3 amd64
 xbindkeys/stable 1.8.7-2 amd64
-xbitmaps/stable 1.1.1-2.2 all
+xbitmaps/stable,now 1.1.1-2.2 all [installed]
 xblast-tnt-images/stable 20050106-3.1 all
 xblast-tnt-levels/stable 20050106+repack-0.1 all
 xblast-tnt-models/stable 20050106-4.1 all
@@ -64060,7 +64060,7 @@ xtel/stable 3.3.0-26 amd64
 xtensor-blas-doc/stable 0.20.0-2 all
 xtensor-dev/stable 0.24.3-1 all
 xtensor-doc/stable 0.24.3-1 all
-xterm/stable 379-1 amd64
+xterm/stable,now 379-1 amd64 [installed]
 xtermcontrol/stable 3.8-6 amd64
 xtermset/stable 0.5.2-6+b1 amd64
 xtide-coastline/stable 20020202-1.2 all
