@@ -2962,8 +2962,9 @@ code-saturne-data/stable 6.0.2-2 all
 code-saturne-doc/stable 6.0.2-2 all
 code-saturne-include/stable 6.0.2-2 amd64
 code-saturne/stable 6.0.2-2 amd64
-code-server/now 4.22.0 amd64 [installed,local]
+code-server/now 4.22.1 amd64 [installed,local]
 code2html/stable 0.9.1-4.2 all
+code/now 1.87.2-1709912201 amd64 [installed,local]
 codeblocks-common/stable 20.03+svn13046-0.1 all
 codeblocks-contrib/stable 20.03+svn13046-0.1+b2 amd64
 codeblocks-dev/stable 20.03+svn13046-0.1+b2 amd64
@@ -11228,6 +11229,7 @@ golang-github-lucas-clemente-quic-go-dev/stable 0.29.0-1 all
 golang-github-lucasb-eyer-go-colorful-dev/stable 1.2.0-1 all
 golang-github-lunixbochs-vtclean-dev/stable 1.0.0-1 all
 golang-github-lunny-log-dev/stable 0.0~git20160921.0.7887c61-7 all
+golang-github-lxc-incus-dev/stable-backports 0.6-1~bpo12+1 all
 golang-github-m3db-prometheus-client-model-dev/stable 0.2.1-1 all
 golang-github-machinebox-graphql-dev/stable 0.2.2-1.1 all
 golang-github-magiconair-properties-dev/stable 1.8.7-1 all
@@ -13660,6 +13662,11 @@ imx-usb-loader/stable 0~git20200517.30b43d69-2 amd64
 in-toto/stable 1.3.1-1 all
 inadyn/stable 2.10.0-1 amd64
 incron/stable 0.5.12-4 amd64
+incus-agent/stable-backports 0.6-1~bpo12+1 amd64
+incus-client/stable-backports 0.6-1~bpo12+1 amd64
+incus-migrate/stable-backports 0.6-1~bpo12+1 amd64
+incus-tools/stable-backports 0.6-1~bpo12+1 amd64
+incus/stable-backports 0.6-1~bpo12+1 amd64
 indelible/stable 1.03-5 amd64
 indent-doc/stable 2.2.12-4+deb12u3 all
 indent/stable 2.2.12-4+deb12u3 amd64
@@ -40565,7 +40572,7 @@ libvtkgdcm-dev/stable 3.0.21-1 amd64
 libvtkgdcm-tools/stable 3.0.21-1 amd64
 libvulkan-dev/stable 1.3.239.0-1 amd64
 libvulkan-volk-dev/stable 1.3.239.0-1 all
-libvulkan1/stable 1.3.239.0-1 amd64
+libvulkan1/stable,now 1.3.239.0-1 amd64 [installed,automatic]
 libvuser-google-api-perl/stable 1.0.1-1.1 all
 libwacom-bin/stable 2.6.0-1 amd64
 libwacom-common/stable 2.6.0-1 all
@@ -41975,10 +41982,13 @@ linux-image-6.5.0-0.deb12.4-cloud-amd64-unsigned/stable-backports 6.5.10-1~bpo12
 linux-image-6.5.0-0.deb12.4-cloud-amd64/stable-backports 6.5.10-1~bpo12+1 amd64
 linux-image-6.6.13+bpo-amd64-dbg/stable-backports 6.6.13-1~bpo12+1 amd64
 linux-image-6.6.13+bpo-amd64-unsigned/stable-backports 6.6.13-1~bpo12+1 amd64
+linux-image-6.6.13+bpo-amd64/stable-backports 6.6.13-1~bpo12+1 amd64
 linux-image-6.6.13+bpo-cloud-amd64-dbg/stable-backports 6.6.13-1~bpo12+1 amd64
 linux-image-6.6.13+bpo-cloud-amd64-unsigned/stable-backports 6.6.13-1~bpo12+1 amd64
+linux-image-6.6.13+bpo-cloud-amd64/stable-backports 6.6.13-1~bpo12+1 amd64
 linux-image-6.6.13+bpo-rt-amd64-dbg/stable-backports 6.6.13-1~bpo12+1 amd64
 linux-image-6.6.13+bpo-rt-amd64-unsigned/stable-backports 6.6.13-1~bpo12+1 amd64
+linux-image-6.6.13+bpo-rt-amd64/stable-backports 6.6.13-1~bpo12+1 amd64
 linux-image-amd64-dbg/stable 6.1.76-1 amd64
 linux-image-amd64-signed-template/stable 6.1.76-1 amd64
 linux-image-amd64/stable 6.1.76-1 amd64
@@ -43293,7 +43303,7 @@ mesa-utils-bin/stable 8.5.0-1 amd64
 mesa-utils/stable 8.5.0-1 amd64
 mesa-va-drivers/stable 22.3.6-1+deb12u1 amd64
 mesa-vdpau-drivers/stable 22.3.6-1+deb12u1 amd64
-mesa-vulkan-drivers/stable 22.3.6-1+deb12u1 amd64
+mesa-vulkan-drivers/stable,now 22.3.6-1+deb12u1 amd64 [installed,automatic]
 mesaflash/stable 3.4.6-1 amd64
 mescc-tools/stable 1.4.0-1 amd64
 meshio-tools/stable 7.0.0-3 all
@@ -47100,16 +47110,16 @@ openvpn-auth-radius/stable 2.1-8 amd64
 openvpn-dco-dkms/stable 0.0+git20230324-1 all
 openvpn-systemd-resolved/stable 1.3.0-3.1 amd64
 openvpn/stable,stable-security 2.6.3-1+deb12u2 amd64
-openvswitch-common/stable 3.1.0-2 amd64
-openvswitch-doc/stable 3.1.0-2 all
-openvswitch-ipsec/stable 3.1.0-2 amd64
-openvswitch-pki/stable 3.1.0-2 all
-openvswitch-source/stable 3.1.0-2 all
-openvswitch-switch-dpdk/stable 3.1.0-2 amd64
-openvswitch-switch/stable 3.1.0-2 amd64
-openvswitch-test/stable 3.1.0-2 all
-openvswitch-testcontroller/stable 3.1.0-2 amd64
-openvswitch-vtep/stable 3.1.0-2 amd64
+openvswitch-common/stable-security 3.1.0-2+deb12u1 amd64
+openvswitch-doc/stable-security 3.1.0-2+deb12u1 all
+openvswitch-ipsec/stable-security 3.1.0-2+deb12u1 amd64
+openvswitch-pki/stable-security 3.1.0-2+deb12u1 all
+openvswitch-source/stable-security 3.1.0-2+deb12u1 all
+openvswitch-switch-dpdk/stable-security 3.1.0-2+deb12u1 amd64
+openvswitch-switch/stable-security 3.1.0-2+deb12u1 amd64
+openvswitch-test/stable-security 3.1.0-2+deb12u1 all
+openvswitch-testcontroller/stable-security 3.1.0-2+deb12u1 amd64
+openvswitch-vtep/stable-security 3.1.0-2+deb12u1 amd64
 openwince-include/stable 0.3.2-4.1 amd64
 openwince-jtag/stable 0.5.1-8 amd64
 openxr-layer-apidump/stable 1.0.20~dfsg1-1+b2 amd64
@@ -53008,7 +53018,7 @@ python3-openstep-plist/stable 0.3.0-2+b2 amd64
 python3-opentimestamps/stable 0.4.2-1 all
 python3-openturns/stable 1.20-9 amd64
 python3-openvdb/stable 10.0.1-2 amd64
-python3-openvswitch/stable 3.1.0-2 amd64
+python3-openvswitch/stable-security 3.1.0-2+deb12u1 amd64
 python3-opm-common/stable 2022.10+ds-7 amd64
 python3-opm-simulators/stable 2022.10+ds-2 amd64
 python3-optlang/stable 1.5.2-1 all
