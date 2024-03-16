@@ -12,7 +12,7 @@ cd $CMD_PATH
 date
 sudo apt install debootstrap -y
 distro=bookworm
-mirror=http://mirror.nju.edu.cn/debian/
+mirror=https://mirrors.bfsu.edu.cn/debian/
 
 rootfsDir=chroot
 debootstrap=debootstrap
