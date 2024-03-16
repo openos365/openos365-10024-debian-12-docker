@@ -1983,7 +1983,7 @@ c2x/stable 2.40.e+ds-1 amd64
 c3270/stable 4.1ga10-1.1+b1 amd64
 ca-certificates-java/stable 20230710~deb12u1 all
 ca-certificates-mono/stable 6.8.0.105+dfsg-3.3 all
-ca-certificates/stable 20230311 all
+ca-certificates/stable,now 20230311 all [installed]
 cabal-debian/stable 5.2-1 amd64
 cabal-install/stable 3.4.1.0-3 amd64
 cabextract/stable 1.9-3 amd64
@@ -46728,7 +46728,7 @@ openssh-known-hosts/stable 0.6.2-1.1 all
 openssh-server/stable 1:9.2p1-2+deb12u2 amd64
 openssh-sftp-server/stable 1:9.2p1-2+deb12u2 amd64
 openssh-tests/stable 1:9.2p1-2+deb12u2 amd64
-openssl/stable 3.0.11-1~deb12u2 amd64
+openssl/stable,now 3.0.11-1~deb12u2 amd64 [installed]
 openssn-data/stable 1.4-4 all
 openssn/stable 1.4-4 amd64
 opensta-dev/stable 0~20191111gitc018cb2+dfsg-1 amd64
